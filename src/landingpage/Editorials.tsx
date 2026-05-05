@@ -54,7 +54,7 @@ const Editorials: React.FC = () => {
   return (
     <div className="bg-gray-100 py-10 md:py-20 px-4 overflow-hidden">
       <div className="relative max-w-6xl mx-auto">
-        {/* Main Viewport */}
+
         <div className="overflow-hidden w-full rounded-lg">
           <div
             className="flex transition-transform duration-500 ease-in-out"

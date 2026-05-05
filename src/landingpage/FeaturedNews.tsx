@@ -6,14 +6,14 @@ const FeaturedNews: React.FC = () => {
   return (
     <section className="px-4 md:px-8 py-16">
 
-      {/* SECTION TITLE */}
+
       <h2 className=" text-3xl md:text-4xl font-semibold text-gray-800 mb-10">
         Insights & Legal Updates
       </h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
 
-        {/* ================= FEATURED ARTICLE (LEFT - 2 COLUMNS) ================= */}
+   
         <div className="lg:col-span-2 bg-gray-100 rounded-xl overflow-hidden shadow-sm">
 
           <img

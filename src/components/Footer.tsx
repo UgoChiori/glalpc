@@ -9,9 +9,9 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-500 text-white font-sans">
       <div className="max-w-7xl mx-auto px-6 py-12 md:py-20">
-        {/* MAIN GRID */}
+     
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
-          {/* BRAND & TAGLINE */}
+
           <div className="flex flex-col items-start gap-6">
             <Link to="/">
               <img
@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
             </p>
           </div>
 
-          {/* QUICK LINKS */}
+        
           <div className="flex flex-col gap-4">
             <h4 className="text-xs font-semibold uppercase tracking-[0.2em] mb-2">
               Practice Areas
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* CONTACT INFO */}
+      
           <div className="flex flex-col gap-4">
             <h4 className="text-xs font-semibold uppercase tracking-[0.2em] mb-2">
               Connect
@@ -73,13 +73,13 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* BOTTOM BAR */}
+      
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
           <p className="text-[10px] uppercase tracking-widest text-gray-400">
             © {currentYear} GLA Legal Practitioners. All Rights Reserved.
           </p>
 
-          {/* SOCIALS */}
+     
           <div className="flex items-center gap-6 text-gray-400">
             <Link to="#" className="hover:text-white transition-colors">
               <FaLinkedin size={18} />
