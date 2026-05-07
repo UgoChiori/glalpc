@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-500 text-white font-sans">
+    <footer className="bg-gray-900/90 text-white font-sans">
       <div className="max-w-7xl mx-auto px-6 py-12 md:py-20">
      
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
               </a>
               <div className="flex items-start gap-3">
                 <MapPin size={16} className="mt-1 flex-shrink-0" />
-                <span>Lagos, Nigeria | Uyo, Nigeria</span>
+                <span>Lagos, Nigeria </span>
               </div>
             </div>
           </div>

@@ -9,7 +9,7 @@ const Navigation: React.FC = () => {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-gray-400/80 backdrop-blur-md">
+    <nav className="sticky top-0 z-50 w-full border-b border-white/10 bg-gray-900/90 backdrop-blur-md">
       <div className="flex h-24 items-center justify-between px-4 md:px-8">
         
         {/* LOGO - Now significantly larger on mobile */}
@@ -43,7 +43,7 @@ const Navigation: React.FC = () => {
       <div
         className={`${
           isMenuOpen ? "flex" : "hidden"
-        } absolute top-full left-0 w-full flex-col items-start gap-6 bg-gray-500 py-10 px-8 shadow-2xl md:hidden`}
+        } absolute top-full left-0 w-full flex-col items-start gap-6 bg-gray-800 py-10 px-8 shadow-2xl md:hidden`}
       >
         {["Home", "About", "Team", "Updates", "Contact"].map((item) => (
           <Link 

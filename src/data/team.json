@@ -1,0 +1,81 @@
+[
+    {
+        "id": 1,
+        "name": "Lugard Gbenga Agbomoagan",
+        "role": "FIMC, CMC, FICM/Lead Attorney",
+        "image": "/images/team1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Grace Akalumhe",
+        "role": "Head of Practice",
+        "image": "/images/team2.jpg"
+    } ,
+    {
+        "id": 3,
+        "name": "Ayodele Liman",
+        "role": "Head, Corporate Practice(RESIGNED)",
+        "image": "/images/team3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Jane Nwabuoku",
+        "role": "International & Domestic Commercial Law(RESIGNED)",
+        "image": "/images/team4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Omolade Olalemi  ",
+        "role": "Litigation & Advisory(RESIGNED)",
+        "image": "/images/team5.jpg"
+    }  ,
+    {
+        "id": 6,
+        "name": "Rodiat Sadu ",
+        "role": " Finance & Tax(RESIGNED)",
+        "image": "/images/team6.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Dahiru Fatanga",
+        "role": "Administration",
+        "image": "/images/team7.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Itsede Kingsley Okhai",
+        "role": "Senior Attorney(RESIGNED)",
+        "image": "/images/team8.jpeg"
+    },
+    {
+        "id": 9,
+        "name": "Rita Yetunde Ogayemi ",
+        "role": "Audit & Financial Expert",
+        "image": "/images/team9.jpeg"
+    },
+    {
+        "id": 10,
+        "name": "Oyinkansola Fagbola",
+        "role": "Attorney",
+        "image": "/images/team10.jpeg"
+    },
+    {
+        "id": 11,
+        "name": "Godswill Shotayo",
+        "role": "Administration",
+        "image": "/images/team11.jpeg"
+    },
+    {
+        "id": 12,
+        "name": "Ogunmodede Nifemi/",
+        "role": "Corporate & Commercial Associate",
+        "image": "/images/team12.jpeg"
+    },
+    {
+        "id": 13,
+        "name": "Afolabi Oluwasegun",
+        "role": "Corporate & Commercial Associate",
+        "image": "/images/team13.jpg"
+    }
+    
+]

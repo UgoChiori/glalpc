@@ -10,3 +10,40 @@ body {
   --font-sans: "Inter", sans-serif;
   --font-serif: "Playfair Display", serif;
 }
+
+
+@variant dark (&:where(.dark, .dark *));
+
+
+.btn-outline {
+  @apply border border-white px-6 py-2 text-white relative overflow-hidden transition;
+}
+
+.btn-outline::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: white;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+
+.btn-outline:hover::before {
+  transform: scaleX(1);
+}
+
+.btn-outline:hover {
+  color: black;
+}
+
+/* Filled button */
+.btn-filled {
+  @apply bg-white text-black px-6 py-2 transition relative;
+}
+
+.btn-filled:hover {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+  transform: translateY(-2px);
+}

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const FeaturedNews: React.FC = () => {
   return (
-    <section className="px-4 md:px-8 py-16">
+    <section className="px-4 md:px-8 py-16 max-w-7xl mx-auto">
 
 
       <h2 className=" text-3xl md:text-4xl font-semibold text-gray-800 mb-10">
