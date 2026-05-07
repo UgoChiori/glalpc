@@ -62,7 +62,7 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import ThemeToggle from '../components/Themetoggle';
+import ThemeToggle from '../components/ThemeToggle';
 import teamData from '../data/team.json'; 
 
 gsap.registerPlugin(ScrollTrigger);
