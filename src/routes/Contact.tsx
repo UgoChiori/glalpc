@@ -20,49 +20,121 @@ const ContactPage: React.FC = () => {
             </div>
 
             {/* CONTACT DETAILS */}
-            <div className="space-y-6 mt-10">
-              {/* ADDRESS */}
-              <div className="flex items-start gap-3">
-                <MapPin size={18} className="text-yellow-700 mt-1" />
+          {/* LEFT */}
+<div className="flex flex-col">
 
-                <p className="text-gray-800 text-sm md:text-base leading-relaxed">
-                  5 Atinuke Olabanji Street, Ikeja, Lagos, Nigeria 100001
-                </p>
-              </div>
+  {/* <div>
+    <h1 className="text-4xl md:text-5xl font-semibold leading-none text-black">
+      Contact
+      <br />
+      Info
+    </h1>
 
-              {/* EMAIL */}
-              <div className="flex items-center gap-3">
-                <Mail size={18} className="text-yellow-700" />
+    <div className="w-10 h-[2px] bg-black mt-5"></div>
+  </div> */}
 
-                <a
-                  href="mailto:attorneys@glalpc.com"
-                  className="text-gray-800 text-sm md:text-base hover:text-yellow-700 transition"
-                >
-                  attorneys@glalpc.com
-                </a>
-              </div>
+  {/* CONTACT DETAILS */}
+  <div className="space-y-8 mt-10">
 
-              {/* PHONE */}
-              <div className="flex items-start gap-3">
-                <Phone size={18} className="text-yellow-700 mt-1" />
+    {/* NIGERIA OFFICE */}
+    <div>
+      <h3 className="text-sm uppercase tracking-[0.2em] text-yellow-700 mb-4">
+        Nigeria Location
+      </h3>
 
-                <div className="flex flex-col text-sm md:text-base">
-                  <a
-                    href="tel:+2347042662654"
-                    className="text-gray-800 hover:text-yellow-700 transition"
-                  >
-                    +234 704 266 2654
-                  </a>
+      {/* ADDRESS */}
+      <div className="flex items-start gap-3 mb-4">
+        <MapPin
+          size={18}
+          className="text-yellow-700 mt-1"
+        />
 
-                  <a
-                    href="tel:+2347035610109"
-                    className="text-gray-800 hover:text-yellow-700 transition"
-                  >
-                    +234 703 561 0109
-                  </a>
-                </div>
-              </div>
-            </div>
+        <p className="text-gray-800 text-sm md:text-base leading-relaxed">
+          5 Atinuke Olabanji Street,
+          Ikeja,
+          Lagos, Nigeria 100001
+        </p>
+      </div>
+
+      {/* EMAIL */}
+      <div className="flex items-center gap-3 mb-4">
+        <Mail
+          size={18}
+          className="text-yellow-700"
+        />
+
+        <a
+          href="mailto:attorneys@glalpc.com"
+          className="text-gray-800 text-sm md:text-base hover:text-yellow-700 transition"
+        >
+          attorneys@glalpc.com
+        </a>
+      </div>
+
+      {/* PHONE */}
+      <div className="flex items-start gap-3">
+        <Phone
+          size={18}
+          className="text-yellow-700 mt-1"
+        />
+
+        <div className="flex flex-col text-sm md:text-base">
+          <a
+            href="tel:+2347042662654"
+            className="text-gray-800 hover:text-yellow-700 transition"
+          >
+            +234 704 266 2654
+          </a>
+
+          <a
+            href="tel:+2347035610109"
+            className="text-gray-800 hover:text-yellow-700 transition"
+          >
+            +234 703 561 0109
+          </a>
+        </div>
+      </div>
+    </div>
+
+    {/* BRAZIL OFFICE */}
+    <div>
+      <h3 className="text-sm uppercase tracking-[0.2em] text-yellow-700 mb-4">
+        Brazil Location
+      </h3>
+
+      {/* ADDRESS */}
+      <div className="flex items-start gap-3 mb-4">
+        <MapPin
+          size={18}
+          className="text-yellow-700 mt-1"
+        />
+
+        <p className="text-gray-800 text-sm md:text-base leading-relaxed">
+          Advocacia FJ,
+          Praça Dr. João Mendes, 42,
+          4th floor, Cj. 44,
+          Downtown of São Paulo, Brazil
+        </p>
+      </div>
+
+      {/* PHONE */}
+      <div className="flex items-start gap-3">
+        <Phone
+          size={18}
+          className="text-yellow-700 mt-1"
+        />
+
+        <a
+          href="tel:+5511986654733"
+          className="text-gray-800 text-sm md:text-base hover:text-yellow-700 transition"
+        >
+          +55 11 98665-4733
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
           </div>
 
           {/* RIGHT */}
@@ -145,19 +217,48 @@ const ContactPage: React.FC = () => {
         </div>
 
         {/* MAP */}
-        <div className="mt-14">
-          <div className="overflow-hidden border border-black/10 h-[300px] md:h-[400px]">
-            <iframe
-              title="Office Location"
-              src="https://www.google.com/maps?q=5%20Atinuke%20Olabanji%20Street%20Ikeja%20Lagos&output=embed"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-            ></iframe>
-          </div>
-        </div>
+      {/* MAPS */}
+<div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-6">
+
+  {/* NIGERIA MAP */}
+  <div>
+    <h3 className="text-sm uppercase tracking-[0.2em] text-gray-700 mb-3">
+      Lagos Office
+    </h3>
+
+    <div className="overflow-hidden border border-black/10 h-[300px]">
+      <iframe
+        title="Lagos Office"
+        src="https://www.google.com/maps?q=5%20Atinuke%20Olabanji%20Street%20Ikeja%20Lagos&output=embed"
+        width="100%"
+        height="100%"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+
+  {/* BRAZIL MAP */}
+  <div>
+    <h3 className="text-sm uppercase tracking-[0.2em] text-gray-700 mb-3">
+      São Paulo Office
+    </h3>
+
+    <div className="overflow-hidden border border-black/10 h-[300px]">
+      <iframe
+        title="Brazil Office"
+        src="https://www.google.com/maps?q=Praça%20Dr.%20João%20Mendes%2042%20São%20Paulo%20Brazil&output=embed"
+        width="100%"
+        height="100%"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+
+</div>
       </div>
     </section>
   );
