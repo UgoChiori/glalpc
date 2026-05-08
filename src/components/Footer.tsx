@@ -88,15 +88,25 @@ const Footer: React.FC = () => {
           </p>
 
           <div className="flex items-center gap-6 text-gray-400">
-            <Link to="#" className="hover:text-white transition-colors">
+            <a href="https://www.linkedin.com/company/glaattorneys/" 
+            rel="noopener noreferrer"
+              target="_blank"
+              title="linkedin"
+            className="hover:text-white transition-colors">
               <FaLinkedin size={18} />
-            </Link>
-            <Link to="#" className="hover:text-white transition-colors">
+            </a>
+            <a href="https://twitter.com/glaattorneys" rel="noopener noreferrer"
+              target="_blank"
+              title="twitter"
+              className="hover:text-white transition-colors">
               <FaTwitter size={18} />
-            </Link>
-            <Link to="#" className="hover:text-white transition-colors">
+            </a>
+            <a href="https://www.facebook.com/glaattorneys" rel="noopener noreferrer"
+              target="_blank"
+              title="facebook"
+              className="hover:text-white transition-colors">
               <FaFacebook size={18} />
-            </Link>
+            </a>
           </div>
 
           <div className="flex gap-6 text-[10px] uppercase tracking-widest text-gray-400">
