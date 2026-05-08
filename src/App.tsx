@@ -12,6 +12,10 @@ import {useGSAP } from "@gsap/react";
 import { ScrollTrigger, SplitText } from "gsap/all";
 import gsap from "gsap";
 import Lenis from "@studio-freight/lenis";
+import FeaturedCorporateTraining from "./news/FeaturedCorporateTraining";
+import LegalTips from "./news/LegalTips";
+import EntrepreneurLegalTips from "./news/EntrepreneurLegalTips";
+import CyberSecurityLaw from "./news/CyberSecurityLaw";
 
 
 gsap.registerPlugin(ScrollTrigger, SplitText, useGSAP);
@@ -35,6 +39,10 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/updates" element={<Updates />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/news/corporate-training" element={<FeaturedCorporateTraining />} />
+          <Route path="/news/legal-tips" element={<LegalTips />} />
+          <Route path="/news/legal-entrepreneur" element={<EntrepreneurLegalTips />} />
+          <Route path="/news/cyber-security-law" element={<CyberSecurityLaw />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

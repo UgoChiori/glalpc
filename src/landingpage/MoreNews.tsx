@@ -32,7 +32,7 @@ const MoreNews: React.FC = () => {
             <p className="text-xs text-gray-500 mb-4">Jane Nwabuoku Esq.</p>
 
             <Link
-              to="/news/legal-tips"
+              to="/news/legal-entrepreneur"
               className="flex items-center gap-2 text-gray-800 font-medium hover:gap-3 transition-all duration-300 w-fit"
             >
               Read more
