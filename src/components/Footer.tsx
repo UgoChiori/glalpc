@@ -53,13 +53,13 @@ const Footer: React.FC = () => {
                 href="mailto:info@glalpc.com"
                 className="flex items-center gap-3 hover:text-white"
               >
-                <Mail size={16} /> info@glalpc.com
+                <Mail size={16} /> attorneys@glalpc.com
               </a>
               <a
                 href="tel:+234000000000"
                 className="flex items-center gap-3 hover:text-white"
               >
-                <Phone size={16} /> +234 (0) 800 GLA LEGAL
+                <Phone size={16} /> +234 704 266 2654
               </a>
               <div className="flex items-start gap-3">
                 <MapPin size={16} className="mt-1 flex-shrink-0" />
