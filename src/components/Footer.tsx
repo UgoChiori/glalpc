@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
             </h4>
             <div className="flex flex-col gap-4 text-sm text-gray-300">
               <a
-                href="mailto:info@glalpc.com"
+                href="mailto:attorneys@glalpc.com"
                 className="flex items-center gap-3 hover:text-white"
               >
                 <Mail size={16} /> attorneys@glalpc.com
