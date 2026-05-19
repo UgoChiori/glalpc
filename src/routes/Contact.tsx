@@ -9,7 +9,7 @@ const ContactPage: React.FC = () => {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    // 1. Grab the form element immediately before any async work
+    // 1. Store the form reference
     const form = event.currentTarget;
 
     const loadingToast = toast.loading("Sending message...");
@@ -17,7 +17,7 @@ const ContactPage: React.FC = () => {
 
     // 2. Use the stored form reference
     const formData = new FormData(form);
-    formData.append("access_key", "6688f286-52e5-43ac-849a-897ee0d0270c");
+    formData.append("access_key", import.meta.env.VITE_WEB3FORMS_KEY);
 
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
@@ -328,33 +328,3 @@ const ContactPage: React.FC = () => {
 };
 
 export default ContactPage;
-
-// import { useState } from 'react';
-
-// export default function ContactForm() {
-//   const [result, setResult] = useState("");
-
-//   const onSubmit = async (event) => {
-//     event.preventDefault();
-//     const formData = new FormData(event.target);
-//     formData.append("access_key", "6688f286-52e5-43ac-849a-897ee0d0270c");
-
-//     const response = await fetch("https://api.web3forms.com/submit", {
-//       method: "POST",
-//       body: formData
-//     });
-
-//     const data = await response.json();
-//     setResult(data.success ? "Success!" : "Error");
-//   };
-
-//   return (
-//     <form onSubmit={onSubmit}>
-//       <input type="text" name="name" required/>
-//       <input type="email" name="email" required/>
-//       <textarea name="message" required></textarea>
-//       <button type="submit">Submit</button>
-//       <p>{result}</p>
-//     </form>
-//   );
-// }
