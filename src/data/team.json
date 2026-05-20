@@ -3,7 +3,36 @@
         "id": 1,
         "name": "Lugard Gbenga Agbomoagan",
         "role": "FIMC, CMC, FICM/Lead Attorney",
-        "image": "/images/team1.jpg"
+        "image": "/images/team1.jpg",
+        "bio": "Lugard Gbenga Agbomoagan is the founder and lead attorney of GLALPC. With over 15 years of experience in corporate law, Lugard has successfully represented numerous clients in high-profile cases. He is known for his strategic approach and dedication to achieving favorable outcomes for his clients.",
+            "qualifications": [
+                "Bachelor of Laws (LL.B.) - University of Lagos",
+                "Master of Laws (LL.M.) in Corporate Law - Harvard Law School",
+                "Fellow of the Institute of Chartered Mediators and Conciliators (FICM)",
+                "Fellow of the Institute of Management Consultants (FIMC)"
+            ],
+            "experience": [
+                "Lead counsel in a landmark corporate merger case resulting in a $500 million deal.",
+                "Successfully defended a multinational corporation in a high-stakes intellectual property dispute.",
+                "Advised several startups on corporate governance and compliance, leading to successful funding rounds."
+            ],
+            "awards": [
+                "Best Corporate Lawyer of the Year - Nigerian Legal Awards 2022",
+                "Top 100 Most Influential Lawyers in Africa - African Legal Awards 2023",
+                "Excellence in Legal Practice Award - Lagos State Bar Association 2021"
+            ],
+            "publications": [
+                "Author of 'Corporate Law in Nigeria: A Comprehensive Guide' published in 2020.",
+                "Regular contributor to legal journals and magazines on topics related to corporate law and governance.",
+                "Speaker at international legal conferences on corporate law and dispute resolution."
+            ],
+            "contact": {
+                "email": "2cH4b@example.com",
+                "phone": "+234 1 234 5678",
+                "website": "https://lugardgbengaagbomoagan.com"
+            }
+
+        
     },
     {
         "id": 2,

@@ -1,68 +1,80 @@
-
-import React, { useLayoutEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import ThemeToggle from '../components/ThemeToggle';
-import teamData from '../data/team.json'; 
-
-gsap.registerPlugin(ScrollTrigger);
+import React, { useRef, useState, useEffect } from "react";
+import { gsap } from "gsap";
+import ThemeToggle from "../components/ThemeToggle";
+import teamData from "../data/team.json";
 
 const Team: React.FC = () => {
   const componentRef = useRef<HTMLDivElement>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [selectedMember, setSelectedMember] = useState<any>(null);
 
-  useLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.from(".team-card", {
-        opacity: 0,
-        y: 60,
-        stagger: 0.1,
-        duration: 0.8,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".team-grid",
-          start: "top 85%",
-        }
-      });
-    }, componentRef);
-    return () => ctx.revert();
+  // ESC CLOSE
+  useEffect(() => {
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setSelectedMember(null);
+    };
+
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
   }, []);
 
+  // LOCK BACKGROUND SCROLL
+  useEffect(() => {
+    document.body.style.overflow = selectedMember ? "hidden" : "auto";
+    document.documentElement.style.overflow = selectedMember ? "hidden" : "auto";
+
+    return () => {
+      document.body.style.overflow = "auto";
+      document.documentElement.style.overflow = "auto";
+    };
+  }, [selectedMember]);
+
+  // MODAL ANIMATION
+  useEffect(() => {
+    if (!selectedMember) return;
+
+    gsap.fromTo(
+      ".modal-content",
+      { opacity: 0, scale: 0.95, y: 20 },
+      { opacity: 1, scale: 1, y: 0, duration: 0.3, ease: "power2.out" }
+    );
+  }, [selectedMember]);
+
   return (
-    
-    <div 
-      ref={componentRef} 
-      className="py-20 px-6 md:px-12 lg:px-24 bg-white dark:bg-gray-900 transition-colors duration-300 min-h-screen"
+    <div
+      ref={componentRef}
+      className="py-20 px-6 md:px-12 lg:px-24 bg-white dark:bg-gray-900 min-h-screen"
     >
       <div className="max-w-7xl mx-auto">
-        {/* 2. Moved Toggle out of the grid to prevent it from jumping on stagger */}
+
+        {/* HEADER */}
         <div className="flex justify-end mb-12">
           <ThemeToggle />
         </div>
-<h1 className="text-4xl md:text-5xl font-semibold leading-none text-black dark:text-white mb-6">
-      Meet Our Team
+
+        <h1 className="text-4xl md:text-5xl font-semibold mb-10 text-black dark:text-white">
+          Meet Our Team
         </h1>
-        <div className="team-grid grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+        {/* GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {teamData.map((member) => (
-            /* 3. Updated card background and text colors */
-            <div 
-              key={member.id} 
-              className="team-card bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden border border-transparent dark:border-gray-700 transition-colors duration-300"
+            <div
+              key={member.id}
+              onClick={() => setSelectedMember(member)}
+              className="cursor-pointer bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden hover:shadow-xl transition"
             >
-              <div className="aspect-[3/4] w-full overflow-hidden bg-gray-200 dark:bg-gray-700">
-                <img 
-                  src={member.image} 
-                  alt={member.name} 
-                  className="w-full h-full object-cover object-top transition-opacity duration-500" 
-                />
-              </div>
-              
+              <img
+                src={member.image}
+                alt={member.name}
+                className="w-full h-[320px] object-cover"
+              />
+
               <div className="p-4">
-                {/* Changed text-black to text-slate-900 and added dark:text-white */}
-                <h3 className="font-bold text-xl text-slate-900 dark:text-white">
+                <h3 className="text-lg font-bold text-black dark:text-white">
                   {member.name}
                 </h3>
-                {/* text-gray-400 stays readable in both modes, but dark:text-gray-500 adds depth */}
-                <p className="text-gray-500 dark:text-gray-400 text-sm uppercase tracking-wider mt-1">
+                <p className="text-sm text-gray-500 uppercase">
                   {member.role}
                 </p>
               </div>
@@ -70,6 +82,104 @@ const Team: React.FC = () => {
           ))}
         </div>
       </div>
+
+      {/* MODAL */}
+      {selectedMember && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4"
+          onClick={() => setSelectedMember(null)}
+
+          // 🔥 FIX: allow proper wheel + touch scroll behavior
+          onWheel={(e) => e.stopPropagation()}
+          onTouchMove={(e) => e.stopPropagation()}
+        >
+          <div
+            className="modal-content relative w-full max-w-4xl h-[85vh] bg-white dark:bg-gray-900 rounded-xl shadow-2xl overflow-hidden flex"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* CLOSE */}
+            <button
+              onClick={() => setSelectedMember(null)}
+              className="absolute top-3 right-4 text-3xl text-gray-500 hover:text-black dark:hover:text-white z-10"
+            >
+              ×
+            </button>
+
+            {/* IMAGE */}
+            <div className="w-1/2 h-full">
+              <img
+                src={selectedMember.image}
+                className="w-full h-full object-cover"
+                alt={selectedMember.name}
+              />
+            </div>
+
+            {/* SCROLLABLE CONTENT */}
+            <div className="w-1/2 h-full overflow-y-auto p-6 space-y-4 scroll-smooth">
+
+              <h2 className="text-2xl font-semibold text-black dark:text-white">
+                {selectedMember.name}
+              </h2>
+
+              <p className="text-yellow-700 uppercase text-sm">
+                {selectedMember.role}
+              </p>
+
+              <p className="text-gray-700 dark:text-gray-300">
+                {selectedMember.bio}
+              </p>
+
+              {/* QUALIFICATIONS */}
+              <div>
+                <h3 className="text-xs uppercase text-gray-500 mb-2 mt-4">
+                  Qualifications
+                </h3>
+                <ul className="list-disc pl-5 text-sm space-y-1 text-gray-700 dark:text-gray-300">
+                  {selectedMember.qualifications?.map((q: string, i: number) => (
+                    <li key={i}>{q}</li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* EXPERIENCE */}
+              <div>
+                <h3 className="text-xs uppercase text-gray-500 mb-2 mt-4">
+                  Experience
+                </h3>
+                <ul className="list-disc pl-5 text-sm space-y-1 text-gray-700 dark:text-gray-300">
+                  {selectedMember.experience?.map((e: string, i: number) => (
+                    <li key={i}>{e}</li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* PUBLICATIONS */}
+              <div>
+                <h3 className="text-xs uppercase text-gray-500 mb-2 mt-4">
+                  Publications
+                </h3>
+                <ul className="list-disc pl-5 text-sm space-y-1 text-gray-700 dark:text-gray-300">
+                  {selectedMember.publications?.map((p: string, i: number) => (
+                    <li key={i}>{p}</li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* CONTACT */}
+              <div>
+                <h3 className="text-xs uppercase text-gray-500 mb-2 mt-4">
+                  Contact
+                </h3>
+                <ul className="text-sm space-y-1 text-gray-700 dark:text-gray-300">
+                  <li>{selectedMember.contact?.email}</li>
+                  <li>{selectedMember.contact?.phone}</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

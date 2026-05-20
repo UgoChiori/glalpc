@@ -12,7 +12,7 @@ const FeaturedNews: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
         <div className="lg:col-span-2 bg-gray-100 rounded-xl overflow-hidden shadow-sm">
           <img
-            src="/images/herosecthree.jpeg"
+            src="/images/morenews3.avif"
             alt="Featured article"
             className="w-full h-80 md:h-[420px] object-cover"
           />

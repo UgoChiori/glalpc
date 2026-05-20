@@ -13,7 +13,7 @@ const MoreNews: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="bg-gray-100 rounded-lg shadow-sm overflow-hidden">
           <img
-            src="/images/herosec5.jpg"
+            src="/images/morenews1.avif"
             alt="Legal tips"
             className="w-full h-56 md:h-64 object-cover rounded-md"
           />
@@ -43,7 +43,7 @@ const MoreNews: React.FC = () => {
 
         <div className="bg-gray-100 rounded-lg shadow-sm overflow-hidden">
           <img
-            src="/images/herosec6.jpg"
+            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29ycG9yYXRlJTIwdHJhaW5pbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
             alt="Corporate training"
             className="w-full h-56 md:h-64 object-cover"
           />
