@@ -40,7 +40,7 @@ const Navigation: React.FC = () => {
   return (
     <nav
       className={`sticky top-0 z-50 w-full border-b border-white/10 
-      bg-gray-900/90 backdrop-blur-md transition-all duration-500
+      bg-gray-300 backdrop-blur-md transition-all duration-500
       ${
         showNav
           ? "translate-y-0 opacity-100"
@@ -67,21 +67,21 @@ const Navigation: React.FC = () => {
           
           <Link
             to="/"
-            className="text-white/90 transition-colors duration-300 hover:text-white"
+            className="text-black transition-colors duration-300 hover:text-white"
           >
             Home
           </Link>
 
           <Link
             to="/about"
-            className="text-white/90 transition-colors duration-300 hover:text-white"
+            className="text-black transition-colors duration-300 hover:text-white"
           >
             About
           </Link>
 
           <Link
             to="/team"
-            className="text-white/90 transition-colors duration-300 hover:text-white"
+            className="text-black transition-colors duration-300 hover:text-white"
           >
             Team
           </Link>
@@ -90,7 +90,7 @@ const Navigation: React.FC = () => {
 
           <Link
             to="/contact"
-            className="text-white/90 transition-colors duration-300 hover:text-white"
+            className="text-black transition-colors duration-300 hover:text-white"
           >
             Contact
           </Link>
@@ -98,7 +98,7 @@ const Navigation: React.FC = () => {
 
         {/* MOBILE TOGGLE */}
         <button
-          className="relative z-50 flex items-center justify-center text-white focus:outline-none md:hidden"
+          className="relative z-50 flex items-center justify-center text-gray-900 focus:outline-none md:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <X size={32} /> : <Menu size={32} />}
