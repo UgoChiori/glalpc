@@ -2,9 +2,11 @@ import React, { useRef, useState, useEffect } from "react";
 import { gsap } from "gsap";
 import ThemeToggle from "../components/ThemeToggle";
 import teamData from "../data/team.json";
+import { useTranslation } from "react-i18next";
 
 const Team: React.FC = () => {
   const componentRef = useRef<HTMLDivElement>(null);
+  const { t } = useTranslation();
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [selectedMember, setSelectedMember] = useState<any>(null);
 
@@ -53,7 +55,7 @@ const Team: React.FC = () => {
         </div>
 
         <h1 className="text-4xl md:text-5xl font-semibold mb-10 text-black dark:text-white">
-          Meet Our Team
+     {t("team.title")}
         </h1>
 
         {/* GRID */}

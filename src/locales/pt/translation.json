@@ -1,0 +1,326 @@
+{
+  "nav.home": "Início",
+  "nav.about": "Sobre",
+  "nav.team": "Equipe",
+  "nav.updates": "Atualizações",
+  "nav.contact": "Contato",
+
+  "hero.title": "Assessoria Jurídica Estratégica para um Cenário Global",
+
+  "hero.description": "Fornecemos orientação jurídica de classe mundial, permitindo que clientes naveguem por transações internacionais complexas com clareza, confiança e segurança.",
+
+  "hero.about": "Sobre Nós",
+  "hero.contact": "Fale Conosco",
+  "hero.learnMore": "Saiba Mais",
+
+  "featuredNews": {
+    "heading": "Insights e Atualizações Jurídicas",
+    "featuredLabel": "Artigo em Destaque",
+    "readFull": "Ler artigo completo",
+    "readMore": "Ler mais",
+    "featuredTitle": "Tendências emergentes no Direito de Cibersegurança e Proteção de Dados e seu impacto.",
+    "featuredDesc": "O mundo como é hoje pode ser melhor descrito como um mundo digitalmente interconectado. Isso se deve à proliferação de serviços e métodos digitais, pelos quais conceitos como redes sociais, comércio eletrônico e computação em nuvem passaram a ter grande influência.",
+    "item1Title": "Entendendo os direitos autorais de obras artísticas na Nigéria",
+    "item2Title": "Entendendo contratos de trabalho nos ambientes modernos",
+    "item3Title": "Principais requisitos de conformidade para novos negócios"
+    
+  },
+   "moreNews": {
+    "heading": "Últimas Análises",
+    "readMore": "Ler mais",
+
+    "card1Title": "DICAS JURÍDICAS PARA EMPREENDEDORES",
+    "card1Desc": "Dicas essenciais a considerar ao iniciar um negócio na Nigéria. Entender a estrutura legal, registro e conformidade pode proteger sua empresa de riscos futuros.",
+    "card1Author": "Jane Nwabuoku Esq.",
+
+    "card2Title": "Treinamento corporativo e vínculo de emprego: protegendo o investimento",
+    "card2Desc": "Por Oluwasegun Afolabi Ezra"
+  },
+  "footer": {
+    "brandText": "Fornecendo assessoria jurídica estratégica de classe mundial para transações internacionais complexas em um cenário global em evolução.",
+    "connect": "Conectar",
+    "location": "Lagos, Nigéria",
+    "rights": "GLA Legal Practitioners. Todos os direitos reservados.",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço",
+    "designedBy": "Design e Desenvolvimento por"
+  },
+    "about": {
+    "heading": "Sobre o Nosso Escritório",
+    "heroTitle": "Experiência sólida em um cenário global",
+    "heroDesc": "Como um escritório com advogados experientes, desenvolvemos uma ampla experiência na gestão de transações jurídicas complexas tanto a nível local quanto internacional. Temos um histórico de prestação de serviços jurídicos de alta qualidade em diversas áreas, incluindo transações comerciais, propriedade intelectual e conformidade regulatória.",
+    "body1": "Nossa experiência vai além da consultoria jurídica, pois também gerimos transações envolvendo múltiplas partes e stakeholders em diferentes jurisdições. Essa vivência nos expôs a diferentes sistemas jurídicos, culturas e práticas, aprimorando nossas habilidades de comunicação e negociação intercultural.",
+    "body2": "Com nossa experiência em transações e gestão jurídica internacional, oferecemos orientação e liderança a empresas e indivíduos além das fronteiras. Estamos posicionados de forma única para lidar com as complexidades do ambiente jurídico global.",
+    "body3": "Além disso, investimos continuamente no nosso desenvolvimento profissional, buscando sempre aprimorar nosso conhecimento na área jurídica. Participamos de treinamentos, seminários e conferências de direito internacional para acompanhar as mudanças e evoluções do setor.",
+     "body4": "As nossas iniciativas de Responsabilidade Social Corporativa (CSR) refletem o nosso compromisso em retribuir à sociedade. Participamos ativamente em programas de conscientização jurídica, educação comunitária e apoio jurídico pro bono para comunidades carenciadas.",
+    "csrLinksTitle": "Iniciativas de CSR",
+    "csrLink1": {
+      "label": "Conscientização Jurídica e Envolvimento Comunitário",
+      "url": "/csr/legal-awareness"
+    },
+    "csrLink2": {
+      "label": "Advocacia Transfronteiriça",
+      "url": "/csr/pro-bono"
+    },
+    "callout": "De forma geral, nossa experiência em transações e gestão jurídica internacional faz de nós um escritório de referência para clientes que buscam expertise e liderança na navegação do complexo cenário jurídico global."
+  },
+   "article": {
+    "back": "Voltar à Página Inicial",
+    "category": "Empreendedorismo",
+    "title": "Dicas Jurídicas para Empreendedores — Pontos Essenciais ao Iniciar um Negócio na Nigéria",
+    "author": "Por Jane Nwabuoku Esq.",
+    "date": "1 de setembro de 2024",
+    "subtitle": "Direito Comercial Internacional e Doméstico",
+
+    "introTitle": "Introdução",
+    "intro1": "Como empreendedor na Nigéria, compreender o enquadramento jurídico é essencial para o sucesso do negócio.",
+    "intro2": "Iniciar e gerir um negócio na Nigéria traz oportunidades e desafios.",
+    "intro3": "A conformidade legal protege o negócio e favorece o crescimento sustentável.",
+
+    "quote1": "“O empreendedorismo na Nigéria exige mais do que visão de negócios — exige consciência jurídica e conformidade estratégica.”",
+
+    "tipsTitle": "Dicas Jurídicas Essenciais para Empreendedores",
+
+    "tips": [
+      {
+        "title": "Escolher a Estrutura Empresarial Certa",
+        "text": "A estrutura define impostos, responsabilidade e financiamento."
+      },
+      {
+        "title": "Registar o Negócio Corretamente",
+        "text": "Registar na CAC e obter documentação necessária."
+      },
+      {
+        "title": "Compreender Obrigações Fiscais",
+        "text": "Cumprir IVA, IRS, imposto corporativo e outros."
+      },
+      {
+        "title": "Redigir Contratos Claros",
+        "text": "Contratos claros evitam disputas."
+      },
+      {
+        "title": "Proteger Propriedade Intelectual",
+        "text": "Registar marcas, direitos autorais e patentes."
+      },
+      {
+        "title": "Cumprir Regulamentos",
+        "text": "Respeitar regras do setor."
+      },
+      {
+        "title": "Compreender Direito do Trabalho",
+        "text": "Alinhar contratos às leis laborais."
+      },
+      {
+        "title": "Implementar Proteção de Dados",
+        "text": "Cumprir a Lei de Proteção de Dados da Nigéria."
+      },
+      {
+        "title": "Planejar Resolução de Litígios",
+        "text": "Usar arbitragem para reduzir disputas."
+      },
+      {
+        "title": "Consultar Advogado Desde o Início",
+        "text": "Orientação jurídica precoce evita erros caros."
+      }
+    ],
+
+    "structureTitle": "Escolhendo a Estrutura Empresarial",
+    "structureText": "A estrutura afeta responsabilidade, impostos e conformidade.",
+
+    "taxTitle": "Obrigações Fiscais",
+    "taxText1": "Os empreendedores devem cumprir o sistema fiscal da Nigéria.",
+    "taxText2": "Inclui IVA, IRS, imposto corporativo e retenções.",
+
+    "ipTitle": "Proteção de Propriedade Intelectual",
+    "ipText1": "A proteção de PI é essencial para negócios modernos.",
+    "ipText2": "Registar marcas, direitos autorais e patentes.",
+
+    "conclusionTitle": "Conclusão",
+    "conclusion1": "O empreendedorismo exige consciência jurídica.",
+    "conclusion2": "A conformidade reduz riscos e promove crescimento.",
+    "conclusion3": "A orientação jurídica precoce evita erros dispendiosos."
+  },
+    "corp": {
+    "back": "Voltar à Página Inicial",
+    "category": "Não categorizado",
+    "title": "Treinamento Corporativo e Vínculo de Emprego: Protegendo o Investimento",
+    "author": "Por Oluwasegun Afolabi Ezra",
+    "date": "1 de julho de 2025",
+    "subtitle": "Associado Corporativo e Comercial, GLA Legal Practitioners",
+
+    "introTitle": "Introdução",
+    "intro1": "O treinamento de funcionários é um investimento essencial.",
+    "intro2": "Ele aumenta produtividade e inovação.",
+    "intro3": "Mas envolve custos financeiros.",
+
+    "quote1": "Treinamento é um investimento — e todo investimento deve ser protegido.",
+
+    "section1Title": "Vínculo de Emprego ou Treinamento",
+    "section1Text1": "Um acordo legal para proteger investimentos em treinamento.",
+    "section1Text2": "O funcionário permanece ou reembolsa os custos.",
+
+    "simpleTitle": "Em Termos Simples",
+    "simpleText": "O funcionário permanece por um período ou paga o treinamento.",
+
+    "conditionsTitle": "Condições de Validade",
+    "conditions": [
+      "O vínculo deve ser voluntário.",
+      "Termos razoáveis.",
+      "Assinado antes do treinamento.",
+      "Reembolso claro.",
+      "Valor justo.",
+      "Sem violação do empregador."
+    ],
+
+    "bestPracticesTitle": "Melhores Práticas para Empregadores",
+    "draftingTitle": "Elaboração do Acordo",
+    "drafting": [
+      "Deve ser escrito.",
+      "Deve ser assinado.",
+      "Orientação jurídica recomendada.",
+      "Antes do treinamento."
+    ],
+
+    "safeguardsTitle": "Medidas de Proteção",
+    "safeguards": [
+      "Definir reembolso claramente.",
+      "Estabelecer KPIs.",
+      "Garantir transparência.",
+      "Revisão jurídica."
+    ],
+
+    "clarityTitle": "Clareza é Essencial",
+    "clarityText": "O acordo deve ser claro e separado de políticas gerais.",
+
+    "exampleTitle": "Exemplo",
+    "exampleText": "100% de reembolso em 6 meses; 50% em 1 ano.",
+
+    "conclusionTitle": "Conclusão",
+    "conclusion1": "O treinamento fortalece organizações.",
+    "conclusion2": "Os vínculos equilibram investimento e mobilidade.",
+    "conclusion3": "Estrutura correta é essencial.",
+
+    "referencesTitle": "Referências",
+    "references": [
+      "Dr Victor Balogun & Ors v FUTA — NICN/AK/49/2015",
+      "Overland Airways Ltd v Oladeji Afolayan — NICN/LA/19/2011",
+      "Northern Thunderbird Air Inc v Van Haren (2011) BCSC 837"
+    ]
+  },
+  
+  "cyber": {
+    "back": "Voltar à Página Inicial",
+    "category": "Tecnologia",
+    "title": "Tendências Emergentes em Direito Cibernético e Privacidade de Dados e Seu Impacto em Indivíduos e Organizações",
+    "author": "Por Omolade Olalemi Esq.",
+    "date": "21 de agosto de 2024",
+
+    "body": [
+      "O mundo atual é digitalmente interconectado.",
+      "Isso se deve às redes sociais, e-commerce e computação em nuvem.",
+      "Isso gerou grande criação de dados e preocupações com privacidade.",
+      "Governos estão criando leis para lidar com isso."
+    ],
+
+    "quote": "O aumento exponencial da criação de dados gerou grandes desafios de privacidade e segurança.",
+
+    "globalTitle": "Estrutura Jurídica Global",
+    "global": [
+      "O GDPR é uma das principais leis globais de proteção de dados.",
+      "Ele estabelece regras rígidas para o uso de dados.",
+      "Influenciou vários países no mundo."
+    ],
+
+    "nigeriaTitle": "Estrutura Jurídica da Nigéria",
+    "nigeria": [
+      "A Nigéria possui a Lei de Crimes Cibernéticos de 2015.",
+      "Ela criminaliza crimes digitais.",
+      "A NDPA 2023 reforça a proteção de dados."
+    ],
+
+    "ndpaTitle": "Princípios da NDPA",
+    "ndpa": [
+      "Minimização de dados",
+      "Consentimento do usuário",
+      "Direito ao esquecimento",
+      "Direito de acesso",
+      "Obrigações de conformidade"
+    ],
+
+    "challengesTitle": "Desafios Organizacionais",
+    "challenges": [
+      "Conformidade regulatória",
+      "Dados transfronteiriços",
+      "Ameaças cibernéticas",
+      "Multas financeiras",
+      "Riscos de reputação"
+    ],
+
+    "impactTitle": "Impacto em Indivíduos e Organizações",
+    "impact": [
+      "Indivíduos ganham mais controle sobre seus dados.",
+      "Organizações enfrentam regras mais rígidas.",
+      "O não cumprimento gera penalidades."
+    ],
+
+    "statTitle": "Estatística Importante",
+    "statText": "Mais de 81% das empresas já sofreram exposição de dados devido à governança fraca.",
+
+    "conclusionTitle": "Conclusão",
+    "conclusion": [
+      "As leis de cibersegurança continuarão evoluindo.",
+      "Novas tecnologias criam novos riscos.",
+      "A conformidade é uma necessidade estratégica."
+    ],
+
+    "referencesTitle": "Referências",
+    "references": [
+      "GDPR (UE) 2016/679",
+      "Lei de Crimes Cibernéticos de 2015",
+      "NDPA 2023",
+      "Constituição da Nigéria de 1999"
+    ]
+  },
+  "team": {
+  "title": "Conheça a Nossa Equipa"
+},
+"copyright": {
+  "back": "Voltar à Página Inicial",
+  "category": "Entretenimento",
+  "title": "Compreensão do Direito de Autor para Obras Artísticas na Nigéria",
+  "author": "Por Oluwanifemi Ogunmodede",
+  "date": "6 de outubro de 2025",
+  "subtitle": "Associado de Direito Comercial e Empresarial",
+
+  "body": [
+    "Na indústria criativa da Nigéria, o direito de autor protege criadores originais.",
+    "Aplica-se à arte, música, moda, fotografia e meios digitais.",
+    "Conhecer os seus direitos é essencial para qualquer criador."
+  ],
+
+  "quote": "A proteção de direitos de autor existe para preservar a originalidade, recompensar a criatividade e proteger a expressão artística.",
+
+  "section1Title": "Obras Artísticas Protegidas pela Lei Nigeriana",
+  "section1": [
+    "Inclui pinturas, desenhos, esculturas, fotografias e mais.",
+    "São protegidas pela Lei de Direitos de Autor da Nigéria (alterada em 2022)."
+  ],
+
+  "section2Title": "Registo de Direitos de Autor na Nigéria",
+  "section2": [
+    "O direito de autor existe automaticamente na criação.",
+    "O registo no NCC serve como prova de propriedade."
+  ],
+
+  "section3Title": "Direitos do Autor",
+  "section3": [
+    "Direitos económicos sobre a utilização da obra.",
+    "Direitos morais para proteger autoria e reputação."
+  ],
+
+  "disclaimer": "Este conteúdo é apenas informativo e não constitui aconselhamento jurídico."
+}
+
+}
+
+

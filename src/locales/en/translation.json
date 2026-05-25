@@ -1,0 +1,323 @@
+{
+  "nav.home": "Home",
+  "nav.about": "About",
+  "nav.team": "Team",
+  "nav.updates": "Updates",
+  "nav.contact": "Contact",
+   
+  "hero.title": "Strategic Legal Advisory for a Global Landscape",
+
+  "hero.description": "We provide world-class legal guidance, enabling clients to navigate complex cross-border transactions with clarity, confidence, and trust.",
+  "hero.about": "About Us",
+  "hero.contact": "Contact Us",
+  "hero.learnMore": "Learn More",
+    "featuredNews": {
+    "heading": "Insights & Legal Updates",
+    "featuredLabel": "Featured Article",
+    "readFull": "Read full article",
+    "readMore": "Read more",
+    "featuredTitle": "Corporate Training and Employment Bond: Safeguarding The Investment",
+    "featuredDesc": "The world as it is today could best be described as a digitally interconnected one. This is in light of the proliferation of digital services and methods, whereby concepts such as social media, e-commerce, and cloud computing have taken sway",
+    "item1Title": "Understanding Copyright for artistic works in Nigeria",
+    "item2Title": "Understanding Employment Contracts in Modern Workplaces",
+    "item3Title": "Key Compliance Requirements for New Businesses"
+    
+},
+"moreNews": {
+    "heading": "Latest Insights",
+    "readMore": "Read more",
+
+    "card1Title": "LEGAL TIPS FOR ENTREPRENEURS",
+    "card1Desc": "Vital tips to consider when starting a business in Nigeria. Understanding legal structure, registration, and compliance can protect your business from future risks.",
+    "card1Author": "Jane Nwabuoku Esq.",
+
+    "card2Title": "Corporate Training and Employment Bond: Safeguarding The Investment",
+    "card2Desc": "By Oluwasegun Afolabi Ezra"
+  },
+  "footer": {
+    "brandText": "Providing world-class strategic legal advisory for complex cross-border transactions in an evolving global landscape.",
+    "connect": "Connect",
+    "location": "Lagos, Nigeria",
+    "rights": "GLA Legal Practitioners. All Rights Reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "designedBy": "Designed & Developed by"
+  },
+    "about": {
+    "heading": "About Our Firm",
+    "heroTitle": "Seasoned Expertise on a Global Stage",
+    "heroDesc": "As a Firm with seasoned Attorneys, we have developed a wealth of experience dealing with complex legal transactions both locally and on the international stage. We have a track record of providing top-notch legal advisory services to clients on various matters including commercial transactions, intellectual property rights, and regulatory compliance.",
+    "body1": "Our expertise goes beyond legal advisory services, as we have also managed legal transactions involving multiple stakeholders and parties in diverse jurisdictions. This experience has exposed us to different legal systems, cultures, and practices and has honed our skills in cross-cultural communication and negotiation.",
+    "body2": "With our experience in international legal transactions and management, we have provided legal guidance and leadership to businesses and individuals across borders. We are uniquely positioned to navigate the complexities of the global legal environment.",
+    "body3": "Additionally, we have engaged in continuous professional development as we constantly seek to sharpen our knowledge in the legal field. We have attended training programs, seminars, and conferences on international law to keep abreast of changes and developments in the industry.",
+      "body4": "Our Corporate Social Responsibility (CSR) initiatives reflect our commitment to giving back to society. We actively participate in legal awareness programs, community education, and pro bono legal support for underserved communities.",
+    "csrLinksTitle": "CSR Initiatives",
+    "csrLink1": {
+      "label": "Send a Child to School",
+      "url": "https://www.linkedin.com/company/send-a-child-2-school-africa/"
+    },
+    "csrLink2": {
+      "label": "Cross-Border Legal Practise",
+      "url": "https://www.linkedin.com/company/cross-border-legal-practice-ai/"
+    },
+    "callout": "Overall, our experience in international legal transactions and management makes us a go-to law firm for clients seeking legal expertise and leadership in navigating the complexities of the global legal landscape."
+    
+  },
+
+  "article": {
+    "back": "Back to Home",
+    "category": "Entrepreneurship",
+    "title": "Legal Tips For Entrepreneurs — Vital Tips To Consider When Starting A Business In Nigeria",
+    "author": "By Jane Nwabuoku Esq.",
+    "date": "September 1, 2024",
+    "subtitle": "International & Domestic Commercial Law",
+
+    "introTitle": "Introduction",
+    "intro1": "As an entrepreneur in Nigeria, understanding the legal framework is crucial for business success.",
+    "intro2": "Starting and running a business in Nigeria comes with both opportunities and challenges.",
+    "intro3": "Ensuring legal compliance protects your business and supports long-term growth.",
+
+    "quote1": "“Entrepreneurship in Nigeria requires more than business acumen — it requires legal awareness and strategic compliance.”",
+
+    "tipsTitle": "Essential Legal Tips For Entrepreneurs",
+
+    "tips": [
+      {
+        "title": "Choose The Right Business Structure",
+        "text": "Selecting the appropriate structure determines tax, liability, and funding options."
+      },
+      {
+        "title": "Register Your Business Properly",
+        "text": "Ensure registration with CAC and obtain required documents."
+      },
+      {
+        "title": "Understand Your Tax Obligations",
+        "text": "Comply with VAT, PAYE, CIT, and other tax requirements."
+      },
+      {
+        "title": "Draft Clear Contracts",
+        "text": "Clear agreements help prevent disputes."
+      },
+      {
+        "title": "Protect Intellectual Property",
+        "text": "Register trademarks, copyrights, and patents."
+      },
+      {
+        "title": "Comply With Regulations",
+        "text": "Ensure compliance with industry-specific rules."
+      },
+      {
+        "title": "Understand Employment Laws",
+        "text": "Align contracts with labour laws."
+      },
+      {
+        "title": "Implement Data Protection",
+        "text": "Comply with Nigeria Data Protection Act 2023."
+      },
+      {
+        "title": "Plan Dispute Resolution",
+        "text": "Use arbitration clauses to reduce litigation risk."
+      },
+      {
+        "title": "Engage Legal Counsel Early",
+        "text": "Early legal guidance prevents costly mistakes."
+      }
+    ],
+
+    "structureTitle": "Choosing The Right Business Structure",
+    "structureText": "Business structure affects liability, taxation, compliance, and funding.",
+
+    "taxTitle": "Understanding Tax Obligations",
+    "taxText1": "Entrepreneurs must comply with Nigeria’s tax system.",
+    "taxText2": "Taxes may include VAT, PAYE, CIT, and withholding tax.",
+
+    "ipTitle": "Intellectual Property Protection",
+    "ipText1": "IP protection is essential for modern businesses.",
+    "ipText2": "Register trademarks, copyrights, and patents.",
+
+    "conclusionTitle": "Conclusion",
+    "conclusion1": "Entrepreneurship requires legal awareness.",
+    "conclusion2": "Compliance helps reduce risks and supports growth.",
+    "conclusion3": "Legal guidance early can prevent costly mistakes."
+  },
+    "corp": {
+    "back": "Back to Home",
+    "category": "Uncategorized",
+    "title": "Corporate Training and Employment Bond: Safeguarding The Investment",
+    "author": "By Oluwasegun Afolabi Ezra",
+    "date": "July 1, 2025",
+    "subtitle": "Corporate & Commercial Associate, GLA Legal Practitioners",
+
+    "introTitle": "Introduction",
+    "intro1": "Employee training is a critical investment.",
+    "intro2": "Training improves productivity and innovation.",
+    "intro3": "However, it comes with financial costs.",
+
+    "quote1": "Training is an investment — and every investment deserves protection.",
+
+    "section1Title": "Employment Bond or Training Bond",
+    "section1Text1": "A legal agreement to protect training investments.",
+    "section1Text2": "Employees agree to stay or refund training costs.",
+
+    "simpleTitle": "In Simple Terms",
+    "simpleText": "Employees either stay for a period or repay training costs.",
+
+    "conditionsTitle": "Conditions For Enforceability",
+    "conditions": [
+      "The bond must be voluntary.",
+      "Terms must be reasonable.",
+      "Signed before training.",
+      "Clear repayment terms.",
+      "Fair cost reflection.",
+      "No employer breach."
+    ],
+
+    "bestPracticesTitle": "Best Practices For Employers",
+    "draftingTitle": "Drafting The Agreement",
+    "drafting": [
+      "Must be written.",
+      "Must be signed.",
+      "Employees should get legal advice.",
+      "Signed before training."
+    ],
+
+    "safeguardsTitle": "Practical Safeguards",
+    "safeguards": [
+      "Define repayment clearly.",
+      "Set KPIs.",
+      "Ensure fairness.",
+      "Use legal review."
+    ],
+
+    "clarityTitle": "Clarity Is Essential",
+    "clarityText": "Agreements must be clear and separate from general policies.",
+
+    "exampleTitle": "Example",
+    "exampleText": "100% repayment if leaving within 6 months; 50% within one year.",
+
+    "conclusionTitle": "Conclusion",
+    "conclusion1": "Training strengthens organisations.",
+    "conclusion2": "Bonds balance investment and employee mobility.",
+    "conclusion3": "Proper structure is essential.",
+
+    "referencesTitle": "References",
+    "references": [
+      "Dr Victor Balogun & Ors v FUTA — NICN/AK/49/2015",
+      "Overland Airways Ltd v Oladeji Afolayan — NICN/LA/19/2011",
+      "Northern Thunderbird Air Inc v Van Haren (2011) BCSC 837"
+    ]
+  },
+   "cyber": {
+    "back": "Back to Home",
+    "category": "Technology",
+    "title": "Emerging Trends In Cybersecurity Law And Data Privacy And Its Impact On Individuals And Organizations",
+    "author": "By Omolade Olalemi Esq.",
+    "date": "August 21, 2024",
+
+    "body": [
+      "The world today is digitally interconnected.",
+      "This is due to social media, e-commerce, and cloud computing.",
+      "This has led to massive data creation and privacy concerns.",
+      "Governments are creating laws to address these issues."
+    ],
+
+    "quote": "The exponential increase in data creation has created major privacy and security challenges.",
+
+    "globalTitle": "Global Legal Framework",
+    "global": [
+      "The GDPR is a key global data protection law.",
+      "It sets strict rules for data handling.",
+      "It has influenced many countries worldwide."
+    ],
+
+    "nigeriaTitle": "The Nigerian Legal Framework",
+    "nigeria": [
+      "Nigeria has the Cybercrimes Act 2015.",
+      "It criminalizes cyber-related offenses.",
+      "The NDPA 2023 strengthens data protection laws."
+    ],
+
+    "ndpaTitle": "Key NDPA Principles",
+    "ndpa": [
+      "Data minimization",
+      "User consent",
+      "Right to be forgotten",
+      "Data access rights",
+      "Compliance obligations"
+    ],
+
+    "challengesTitle": "Organizational Challenges",
+    "challenges": [
+      "Regulatory compliance",
+      "Cross-border data issues",
+      "Cybersecurity threats",
+      "Financial penalties",
+      "Reputation risks"
+    ],
+
+    "impactTitle": "Impact On Individuals And Organizations",
+    "impact": [
+      "Individuals gain control over personal data.",
+      "Organizations face stricter compliance rules.",
+      "Non-compliance leads to penalties."
+    ],
+
+    "statTitle": "Important Statistic",
+    "statText": "Over 81% of companies have experienced data exposure due to weak governance.",
+
+    "conclusionTitle": "Conclusion",
+    "conclusion": [
+      "Cybersecurity laws will continue to evolve.",
+      "New technologies create new risks.",
+      "Compliance is now a strategic necessity."
+    ],
+
+    "referencesTitle": "References",
+    "references": [
+      "GDPR (EU) 2016/679",
+      "Cybercrimes Act 2015",
+      "NDPA 2023",
+      "Constitution of Nigeria 1999"
+    ]
+  },
+  "team": {
+  "title": "Meet Our Team"
+},
+"copyright": {
+  "back": "Back to Home",
+  "category": "Entertainment",
+  "title": "Understanding Copyright For Artistic Works In Nigeria",
+  "author": "By Oluwanifemi Ogunmodede",
+  "date": "October 6, 2025",
+  "subtitle": "Corporate & Commercial Associate, G L Agbomoagan Legal Practitioners & Consultants",
+
+  "body": [
+    "In Nigeria’s creative industry, copyright law protects original creators.",
+    "It applies across art, music, fashion, photography, and digital media.",
+    "Knowing your rights is essential for every creator."
+  ],
+
+  "quote": "Copyright protection exists to preserve originality, reward creativity, and safeguard artistic expression.",
+
+  "section1Title": "Artistic Works Protected Under Nigerian Law",
+  "section1": [
+    "Artistic works include paintings, drawings, sculptures, photography, and more.",
+    "They are protected under the Nigerian Copyright Act (as amended in 2022)."
+  ],
+
+  "section2Title": "Copyright Registration In Nigeria",
+  "section2": [
+    "Copyright exists automatically upon creation.",
+    "Registration with the NCC serves as proof of ownership."
+  ],
+
+  "section3Title": "Rights Of The Author",
+  "section3": [
+    "Authors have economic rights to control use of their work.",
+    "They also have moral rights to protect reputation and authorship."
+  ],
+
+  "disclaimer": "This content is for informational purposes only and does not constitute legal advice."
+}
+
+}

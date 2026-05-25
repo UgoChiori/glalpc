@@ -1,12 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import i18n from "../i18n";
 
 const Navigation: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showNav, setShowNav] = useState(true);
-
+const { t } = useTranslation();
   const closeMenu = () => setIsMenuOpen(false);
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  };
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
@@ -74,37 +80,67 @@ const Navigation: React.FC = () => {
               to="/"
               className="text-black transition-colors duration-300 hover:text-white"
             >
-              Home
+              {t("nav.home")}
+              {/* Home */}
             </Link>
 
             <Link
               to="/about"
               className="text-black transition-colors duration-300 hover:text-white"
             >
-              About
+              {t("nav.about")}
+              {/* About */}
             </Link>
 
             <Link
               to="/team"
               className="text-black transition-colors duration-300 hover:text-white"
             >
-              Team
+              {t("nav.team")}
+              {/* Team */}
             </Link>
 
             <Link
               to="/contact"
               className="text-black transition-colors duration-300 hover:text-white"
             >
-              Contact
+              {t("nav.contact")}
+              {/* Contact */}
             </Link>
             <Link
               to="/updates"
               className="text-black transition-colors duration-300 hover:text-white"
             >
-              Updates
+              {t("nav.updates")}
             </Link>
           </div>
+  <div className="flex items-center gap-2 ml-4 border-l border-white/20 pl-4">
 
+    <button
+      onClick={() => changeLanguage("en")}
+      className={`cursor-pointer transition ${
+        i18n.language === "en"
+          ? "text-black"
+          : "text-black "
+      }`}
+    >
+      EN
+    </button>
+
+    <span className="text-black">|</span>
+
+    <button
+      onClick={() => changeLanguage("pt")}
+      className={`cursor-pointer transition ${
+        i18n.language === "pt"
+          ? "text-black"
+          : "text-black "
+      }`}
+    >
+      PT
+    </button>
+
+  </div>
           {/* MOBILE TOGGLE */}
           <button
             className="relative z-50 flex items-center justify-center text-gray-900 focus:outline-none md:hidden"
@@ -128,7 +164,7 @@ const Navigation: React.FC = () => {
             onClick={closeMenu}
             className="font-sans text-sm tracking-[0.2em] text-white uppercase border-b border-white/5 w-full pb-3"
           >
-            {item}
+            {t(`nav.${item.toLowerCase()}`)}
           </Link>
         ))}
       </div>
