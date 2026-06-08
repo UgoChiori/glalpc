@@ -7,7 +7,7 @@ import i18n from "../i18n";
 const Navigation: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showNav, setShowNav] = useState(true);
-const { t } = useTranslation();
+  const { t } = useTranslation();
   const closeMenu = () => setIsMenuOpen(false);
 
   const changeLanguage = (lng: string) => {
@@ -52,19 +52,30 @@ const { t } = useTranslation();
       <div className="bg-black overflow-hidden border-b border-white/10">
         <div className="whitespace-nowrap py-2">
           <div className="inline-block animate-[marquee_35s_linear_infinite] text-[10px] md:text-xs uppercase tracking-[0.25em] text-white">
-         GLA Legal Practitioners — Corporate & Commercial Law • Cross-Border Legal Advisory • Dispute Resolution • International Partnerships • Lagos, Nigeria & São Paulo, Brazil • 
-  SUPREME COURT DIRECTIVE: Apex court orders INEC to release Warri Federal Constituency ward delineation report following landmark emergency session • 
-  REGULATORY ENFORCEMENT: Corporate Affairs Commission enforces mandatory registration framework for fintech agents and point-of-sale operators nationwide • 
-  TAXATION COMPLIANCE: FIRS accelerates corporate structural regularizations forcing small business names to upgrade to Limited Liability Companies • 
-  JUDICIAL POLICY: National Judicial Council processes critical Federal High Court and Supreme Court judicial appointments to resolve case backlogs •
-        
+            GLA Legal Practitioners — Corporate & Commercial Law • Cross-Border
+            Legal Advisory • Dispute Resolution • International Partnerships •
+            Lagos, Nigeria & São Paulo, Brazil • SUPREME COURT DIRECTIVE: Apex
+            court orders INEC to release Warri Federal Constituency ward
+            delineation report following landmark emergency session • REGULATORY
+            ENFORCEMENT: Corporate Affairs Commission enforces mandatory
+            registration framework for fintech agents and point-of-sale
+            operators nationwide • TAXATION COMPLIANCE: FIRS accelerates
+            corporate structural regularizations forcing small business names to
+            upgrade to Limited Liability Companies • JUDICIAL POLICY: National
+            Judicial Council processes critical Federal High Court and Supreme
+            Court judicial appointments to resolve case backlogs •
           </div>
         </div>
       </div>
 
       {/* MAIN NAV */}
-      <div className="border-b border-white/10 bg-gray-300 backdrop-blur-md">
-        <div className="flex h-28 items-center justify-between px-4 md:px-8">
+      <div className="border-b border-white/10 bg-gray-300 backdrop-blur-md relative overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap font-bold tracking-[0.3em] text-[2rem] md:text-[4rem] lg:text-[6rem] text-black/[0.06] uppercase ">
+            G L Agbomoagan
+          </span>
+        </div>
+        <div className="relative flex h-28 items-center justify-between px-4 md:px-8">
           {/* LOGO */}
           <Link to="/" onClick={closeMenu} className="flex items-center">
             <img
@@ -114,33 +125,27 @@ const { t } = useTranslation();
               {t("nav.updates")}
             </Link>
           </div>
-  <div className="flex items-center gap-2 ml-4 border-l border-white/20 pl-4">
+          <div className="flex items-center gap-2 ml-4 border-l border-white/20 pl-4">
+            <button
+              onClick={() => changeLanguage("en")}
+              className={`cursor-pointer transition ${
+                i18n.language === "en" ? "text-black" : "text-black "
+              }`}
+            >
+              EN
+            </button>
 
-    <button
-      onClick={() => changeLanguage("en")}
-      className={`cursor-pointer transition ${
-        i18n.language === "en"
-          ? "text-black"
-          : "text-black "
-      }`}
-    >
-      EN
-    </button>
+            <span className="text-black">|</span>
 
-    <span className="text-black">|</span>
-
-    <button
-      onClick={() => changeLanguage("pt")}
-      className={`cursor-pointer transition ${
-        i18n.language === "pt"
-          ? "text-black"
-          : "text-black "
-      }`}
-    >
-      PT
-    </button>
-
-  </div>
+            <button
+              onClick={() => changeLanguage("pt")}
+              className={`cursor-pointer transition ${
+                i18n.language === "pt" ? "text-black" : "text-black "
+              }`}
+            >
+              PT
+            </button>
+          </div>
           {/* MOBILE TOGGLE */}
           <button
             className="relative z-50 flex items-center justify-center text-gray-900 focus:outline-none md:hidden"

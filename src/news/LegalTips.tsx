@@ -46,13 +46,11 @@ const CopyrightArticle: React.FC = () => {
 
   return (
     <section ref={pageRef} className="bg-[#f7f4ef] min-h-screen text-black">
-
       {/* HERO */}
       <div className="relative overflow-hidden border-b border-black/10">
         <div className="absolute inset-0 bg-gray-900 opacity-95"></div>
 
         <div className="article-hero relative z-10 max-w-7xl mx-auto px-6 py-16 md:py-24 text-white">
-
           <Link
             to="/"
             className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.2em] hover:text-yellow-300 transition mb-10"
@@ -97,12 +95,12 @@ const CopyrightArticle: React.FC = () => {
 
       {/* BODY */}
       <div className="max-w-4xl mx-auto px-6 py-12 md:py-16">
-
         <div className="article-content space-y-8 text-gray-800 leading-[2] text-[15px] md:text-[17px]">
-
-          {(t("copyright.body", { returnObjects: true }) as string[]).map((p: string, i: number) => (
-            <p key={i}>{p}</p>
-          ))}
+          {(t("copyright.body", { returnObjects: true }) as string[]).map(
+            (p: string, i: number) => (
+              <p key={i}>{p}</p>
+            ),
+          )}
 
           <div className="border-l-4 border-gray-900 pl-6 py-2 italic text-lg bg-yellow-50 rounded-r-xl">
             {t("copyright.quote")}
@@ -112,33 +110,37 @@ const CopyrightArticle: React.FC = () => {
             {t("copyright.section1Title")}
           </h2>
 
-          {(t("copyright.section1", { returnObjects: true }) as string[]).map((p: string, i: number) => (
-            <p key={i}>{p}</p>
-          ))}
+          {(t("copyright.section1", { returnObjects: true }) as string[]).map(
+            (p: string, i: number) => (
+              <p key={i}>{p}</p>
+            ),
+          )}
 
           <h2 className="text-2xl md:text-3xl font-semibold pt-4">
             {t("copyright.section2Title")}
           </h2>
 
-          {(t("copyright.section2", { returnObjects: true }) as string[]).map((p: string, i: number) => (
-            <p key={i}>{p}</p>
-          ))}
+          {(t("copyright.section2", { returnObjects: true }) as string[]).map(
+            (p: string, i: number) => (
+              <p key={i}>{p}</p>
+            ),
+          )}
 
           <h2 className="text-2xl md:text-3xl font-semibold pt-4">
             {t("copyright.section3Title")}
           </h2>
 
-          {(t("copyright.section3", { returnObjects: true }) as string[]).map((p: string, i: number) => (
-            <p key={i}>{p}</p>
-          ))}
+          {(t("copyright.section3", { returnObjects: true }) as string[]).map(
+            (p: string, i: number) => (
+              <p key={i}>{p}</p>
+            ),
+          )}
 
           <div className="border border-black/10 rounded-2xl p-6 bg-white italic text-sm">
             {t("copyright.disclaimer")}
           </div>
-
         </div>
       </div>
-
     </section>
   );
 };
