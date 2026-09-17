@@ -16,6 +16,7 @@ import FeaturedCorporateTraining from "./news/FeaturedCorporateTraining";
 import LegalTips from "./news/LegalTips";
 import EntrepreneurLegalTips from "./news/EntrepreneurLegalTips";
 import CyberSecurityLaw from "./news/CyberSecurityLaw";
+import Commitments from "./routes/Commitments";
 
 
 gsap.registerPlugin(ScrollTrigger, SplitText, useGSAP);
@@ -41,6 +42,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/news/corporate-training" element={<FeaturedCorporateTraining />} />
           <Route path="/news/legal-tips" element={<LegalTips />} />
+          <Route path="/commitments" element={<Commitments />} /> 
           <Route path="/news/legal-entrepreneur" element={<EntrepreneurLegalTips />} />
           <Route path="/news/cyber-security-law" element={<CyberSecurityLaw />} />
           <Route path="*" element={<NotFound />} />

@@ -91,7 +91,7 @@ const MoreNews: React.FC = () => {
         {/* CARD 1 */}
         <div className="bg-gray-100 rounded-lg shadow-sm overflow-hidden">
           <img
-            src="/images/morenews1.avif"
+            src="/images/janeesq.jpeg"
             alt="Legal tips"
             className="w-full h-56 md:h-64 object-cover rounded-md"
           />
@@ -122,7 +122,7 @@ const MoreNews: React.FC = () => {
         {/* CARD 2 */}
         <div className="bg-gray-100 rounded-lg shadow-sm overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=60"
+            src="/images/team13.jpg"
             alt="Corporate training"
             className="w-full h-56 md:h-64 object-cover"
           />

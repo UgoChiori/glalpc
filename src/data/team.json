@@ -5,83 +5,122 @@
         "role": "FIMC, CMC, FICM/Lead Attorney",
         "image": "/images/team1.jpg",
         "bio": "Lugard Gbenga Agbomoagan is the founder and lead attorney of GLALPC. With over 15 years of experience in corporate law, Lugard has successfully represented numerous clients in high-profile cases. He is known for his strategic approach and dedication to achieving favorable outcomes for his clients.",
-            "qualifications": [
-                "Bachelor of Laws (LL.B.) - University of Lagos",
-                "Master of Laws (LL.M.) in Corporate Law - Harvard Law School",
-                "Fellow of the Institute of Chartered Mediators and Conciliators (FICM)",
-                "Fellow of the Institute of Management Consultants (FIMC)"
-            ],
-            "experience": [
-                "Lead counsel in a landmark corporate merger case resulting in a $500 million deal.",
-                "Successfully defended a multinational corporation in a high-stakes intellectual property dispute.",
-                "Advised several startups on corporate governance and compliance, leading to successful funding rounds."
-            ],
-            "awards": [
-                "Best Corporate Lawyer of the Year - Nigerian Legal Awards 2022",
-                "Top 100 Most Influential Lawyers in Africa - African Legal Awards 2023",
-                "Excellence in Legal Practice Award - Lagos State Bar Association 2021"
-            ],
-            "publications": [
-                "Author of 'Corporate Law in Nigeria: A Comprehensive Guide' published in 2020.",
-                "Regular contributor to legal journals and magazines on topics related to corporate law and governance.",
-                "Speaker at international legal conferences on corporate law and dispute resolution."
-            ],
-            "contact": {
-                "email": "2cH4b@example.com",
-                "phone": "+234 1 234 5678",
-                "website": "https://lugardgbengaagbomoagan.com"
-            }
-
-        
+        "qualifications": [
+            "Bachelor of Laws (LL.B.) - University of Lagos",
+            "Master of Laws (LL.M.) in Corporate Law - Harvard Law School",
+            "Fellow of the Institute of Chartered Mediators and Conciliators (FICM)",
+            "Fellow of the Institute of Management Consultants (FIMC)"
+        ],
+        "experience": [
+            "Lead counsel in a landmark corporate merger case resulting in a $500 million deal.",
+            "Successfully defended a multinational corporation in a high-stakes intellectual property dispute.",
+            "Advised several startups on corporate governance and compliance, leading to successful funding rounds."
+        ],
+        "awards": [
+            "Best Corporate Lawyer of the Year - Nigerian Legal Awards 2022",
+            "Top 100 Most Influential Lawyers in Africa - African Legal Awards 2023",
+            "Excellence in Legal Practice Award - Lagos State Bar Association 2021"
+        ],
+        "publications": [
+            "Author of 'Corporate Law in Nigeria: A Comprehensive Guide' published in 2020.",
+            "Regular contributor to legal journals and magazines on topics related to corporate law and governance.",
+            "Speaker at international legal conferences on corporate law and dispute resolution."
+        ],
+        "contact": {
+            "email": "2cH4b@example.com",
+            "phone": "+234 1 234 5678",
+            "website": "https://lugardgbengaagbomoagan.com"
+        }
     },
     {
         "id": 2,
         "name": "Grace Akalumhe",
         "role": "Head of Practice",
         "image": "/images/team2.jpg",
-        "bio": "",
-        "qualifications": [],
-        "experience": [],
-        "awards": [],
-        "publications": [], 
-        "contact": {"email": "", "phone": "", "website": ""}
-    } ,
+        "bio": "Grace Uzoamaka Akalumhe is a Nigerian legal practitioner and Head of Practice at G. L. Agbomoagan Legal Practitioners & Solicitors, where she provides legal advisory, dispute-resolution and transactional support to individuals, businesses and not-for-profit organisations. She is particularly interested in cross-border legal collaboration, institutional partnerships, capacity building and initiatives that improve access to legal services across jurisdictions. She seeks to contribute her practical experience, leadership skills and understanding of Nigeria’s legal and regulatory environment to the Association’s not-for-profit objectives.",
+        "qualifications": [
+            "She holds an LL.B from the University of Lagos, a B.L from the Nigerian Law School and a B.Sc. in Business Administration from Olabisi Onabanjo University. She is currently pursuing an LL.M at the University of Lagos, with academic and professional interests in international law, constitutional law, maritime law and jurisprudence."
+        ],
+        "experience": [
+            "Her experience spans commercial and general litigation, corporate law, property and tenancy matters, employment advisory, probate administration, regulatory compliance and human-rights advocacy. She advises clients on corporate formation and governance, including the incorporation and regulatory compliance of companies, business names and incorporated trustees. She also represents clients before courts, law-enforcement agencies and regulatory institutions. Grace combines her legal qualifications with an academic background in Business Administration and extensive experience in law-office management, human resources, financial administration and organisational compliance. Her exposure to gender equality and human-rights matters through the Office of the Public Defender further reflects her commitment to access to justice and socially responsive legal practice."
+        ],
+        "awards": [
+            "Grace is a member of the Nigerian Bar Association and the International Bar Association. She has also undertaken professional training in arbitration and legal writing."
+        ],
+        "publications": [],
+        "contact": {
+            "email": "",
+            "phone": "",
+            "website": ""
+        }
+    },
     {
         "id": 3,
-        "name": "Ayodele Liman",
-        "role": "Head, Corporate Practice(RESIGNED)",
-        "image": "/images/team3.jpg",
-            "bio": "",
-            "qualifications": [],
-            "experience": [],
-            "awards": [],
-            "publications": [],
-            "contact": {"email": "", "phone": "", "website": ""}
+        "name": "Onome Cynthia Anakanire",
+        "role": "Legal Counsel & Director, New York State Senate Committee on Banks",
+        "image": "/images/onome.jpeg",
+        "bio": "Onome Cynthia Anakanire is an internationally qualified lawyer, privacy and AI governance professional, and public policy adviser whose career spans private practice, multinational organisations, international institutions, and government across Africa, Europe, and the United States. She currently serves as Legal Counsel and Director of the New York State Senate Committee on Banks, advising on banking legislation, financial regulation, consumer protection, and emerging legal and policy issues affecting financial services.",
+        "qualifications": [
+            "Her international experience includes privacy, compliance and governance roles with Allianz Direct, AXA XL, AXA Mansard, and the Organisation for the Prohibition of Chemical Weapons (OPCW), including work on data protection, regulatory compliance, governance and cross-border legal issues."
+        ],
+        "experience": [
+            "A member of both the Nigerian Bar and the New York Bar, she holds advanced law degrees from institutions in Nigeria, France, Belgium and the United States, a Master of Science in Project Management, and internationally recognised certifications including FIP, CIPP/E, CIPP/US and CIPM. Her work sits at the intersection of law, technology, financial regulation and public policy, with a focus on responsible innovation, cross-border commerce, data protection and artificial intelligence governance."
+        ],
+        "awards": [],
+        "publications": [],
+        "contact": {
+            "email": "",
+            "phone": "",
+            "website": ""
+        }
     },
     {
         "id": 4,
-        "name": "Jane Nwabuoku",
-        "role": "International & Domestic Commercial Law(RESIGNED)",
-        "image": "/images/team4.jpg",
-        "bio": "",
+        "name": "Rikayat Ojo-Oba",
+        "role": "CISM, CIPM, CISA, CRISC, Fellow Privacy Technology | CISO, SoEmailSecurity",
+        "image": "/images/rukkyojo.jpeg",
+        "bio": "Rukky Ojo-Oba is a multidisciplinary legal and information security professional, combining a background in Law with extensive experience across industries. She has worked in aviation, sports, consulting, education, entertainment and Telecommunications industries in different capacities. Her work involves developing and implementing security strategies, strengthening organizational resilience, managing information security risks, and ensuring alignment with applicable regulatory and industry standards. Currently serving as Chief Information Security Officer at SoEmailSecurity, she provides strategic leadership in information security, cybersecurity governance, risk management, regulatory compliance, and data privacy. With a strong legal foundation and a technology-focused professional portfolio, she brings a distinctive perspective to the intersection of law, technology, cybersecurity, privacy, and business risk. She serves on boards of both private and non-governmental organizations with particular interest in empowering women and young people to shape the future of cybersecurity and digital safety.",
         "qualifications": [],
         "experience": [],
         "awards": [],
         "publications": [],
-        "contact": {"email": "", "phone": "", "website": ""}
+        "contact": {
+            "email": "",
+            "phone": "",
+            "website": ""
+        }
     },
     {
         "id": 5,
-        "name": "Omolade Olalemi  ",
-        "role": "Litigation & Advisory(RESIGNED)",
-        "image": "/images/team5.jpg",
-        "bio": "",
-        "qualifications": [],
-        "experience": [],
+        "name": "Rita Yetunde Ogayemi",
+        "role": "financial expert & thought leader.",
+        "image": "/images/yetunde.jpeg",
+        "bio": "She is a highly accomplished financial professional with over 15 years of expertise in accounting, auditing, tax consulting, and financial management. Her impressive track record of delivering strategic financial solutions has earned her a reputation as a trusted advisor to businesses and individuals. As a seasoned financial expert, Rita Ogayemi brings a unique blend of technical expertise, business acumen, and exceptional client service skills to help clients achieve their financial goals. Her expertise has been sought by various organizations, and she continues to be a valuable resource in the financial industry. Outside of her professional pursuits, Rita Ogayemi enjoys exploring creative cookery and staying engaged with detective series.",
+        "qualifications": [
+            "Combined Honors - Bachelor's Degree in Economics and Education - Olabisi Onabanjo University",
+            "Masters in Business Administration (in view): University of Lagos, Nigeria",
+            "⁠Certified Member, Institute of Chartered Accountants of Nigeria (ICAN)",
+            "⁠Certified Financial Modelling and Valuation Analyst - Corporate Institute of Finance",
+            " ⁠Associate Member - Institute of Internal Auditors (IIA)",
+            " ⁠⁠Associate Member - Association of Certified Fraud Examiner",
+            " ⁠Fellow, Institute of Chartered Accountants of Nigeria (FCA)",
+            "⁠⁠Associate Member- Chartered Institute of Taxation of Nigeria - Applied"
+        ],
+        "experience": [
+            " Financial Reporting & Analysis",
+            " ⁠Auditing & Assurance",
+            "⁠Tax Planning & Compliance",
+            "⁠  ⁠Financial Modelling & Valuation",
+            " ⁠Strategic Financial Management"
+        ],
         "awards": [],
         "publications": [],
-        "contact": {"email": "", "phone": "", "website": ""}
-    }  ,
+        "contact": {
+            "email": "",
+            "phone": "",
+            "website": ""
+        }
+    },
     {
         "id": 6,
         "name": "Rodiat Sadu ",
@@ -92,7 +131,11 @@
         "experience": [],
         "awards": [],
         "publications": [],
-        "contact": {"email": "", "phone": "", "website": ""}
+        "contact": {
+            "email": "",
+            "phone": "",
+            "website": ""
+        }
     },
     {
         "id": 7,
@@ -104,7 +147,11 @@
         "experience": [],
         "awards": [],
         "publications": [],
-        "contact": {"email": "", "phone": "", "website": ""}
+        "contact": {
+            "email": "",
+            "phone": "",
+            "website": ""
+        }
     },
     {
         "id": 8,
@@ -116,7 +163,11 @@
         "experience": [],
         "awards": [],
         "publications": [],
-        "contact": {"email": "", "phone": "", "website": ""}
+        "contact": {
+            "email": "",
+            "phone": "",
+            "website": ""
+        }
     },
     {
         "id": 9,
@@ -128,7 +179,11 @@
         "experience": [],
         "awards": [],
         "publications": [],
-        "contact": {"email": "", "phone": "", "website": ""}
+        "contact": {
+            "email": "",
+            "phone": "",
+            "website": ""
+        }
     },
     {
         "id": 10,
@@ -140,7 +195,11 @@
         "experience": [],
         "awards": [],
         "publications": [],
-        "contact": {"email": "", "phone": "", "website": ""}
+        "contact": {
+            "email": "",
+            "phone": "",
+            "website": ""
+        }
     },
     {
         "id": 11,
@@ -152,7 +211,11 @@
         "experience": [],
         "awards": [],
         "publications": [],
-        "contact": {"email": "", "phone": "", "website": ""}
+        "contact": {
+            "email": "",
+            "phone": "",
+            "website": ""
+        }
     },
     {
         "id": 12,
@@ -164,7 +227,11 @@
         "experience": [],
         "awards": [],
         "publications": [],
-        "contact": {"email": "", "phone": "", "website": ""}
+        "contact": {
+            "email": "",
+            "phone": "",
+            "website": ""
+        }
     },
     {
         "id": 13,
@@ -176,7 +243,58 @@
         "experience": [],
         "awards": [],
         "publications": [],
-        "contact": {"email": "", "phone": "", "website": ""}
+        "contact": {
+            "email": "",
+            "phone": "",
+            "website": ""
+        }
+    },
+    {
+        "id": 14,
+        "name": "Ayodele Liman",
+        "role": "Head, Corporate Practice(RESIGNED)",
+        "image": "/images/team3.jpg",
+        "bio": "",
+        "qualifications": [],
+        "experience": [],
+        "awards": [],
+        "publications": [],
+        "contact": {
+            "email": "",
+            "phone": "",
+            "website": ""
+        }
+    },
+    {
+        "id": 15,
+        "name": "Jane Nwabuoku",
+        "role": "International & Domestic Commercial Law(RESIGNED)",
+        "image": "/images/team4.jpg",
+        "bio": "",
+        "qualifications": [],
+        "experience": [],
+        "awards": [],
+        "publications": [],
+        "contact": {
+            "email": "",
+            "phone": "",
+            "website": ""
+        }
+    },
+    {
+        "id": 15,
+        "name": "Omolade Olalemi  ",
+        "role": "Litigation & Advisory(RESIGNED)",
+        "image": "/images/team5.jpg",
+        "bio": "",
+        "qualifications": [],
+        "experience": [],
+        "awards": [],
+        "publications": [],
+        "contact": {
+            "email": "",
+            "phone": "",
+            "website": ""
+        }
     }
-    
 ]

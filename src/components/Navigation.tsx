@@ -71,7 +71,7 @@ const Navigation: React.FC = () => {
       {/* MAIN NAV */}
       <div className="border-b border-white/10 bg-gray-300 backdrop-blur-md relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap font-bold tracking-[0.3em] text-[2rem] md:text-[4rem] lg:text-[6rem] text-black/[0.06] uppercase ">
+          <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap font-bold tracking-[0.3em] text-[2rem] md:text-[4rem] lg:text-[6rem] text-black/[0.09] uppercase ">
             G L Agbomoagan
           </span>
         </div>
@@ -89,7 +89,7 @@ const Navigation: React.FC = () => {
           <div className="hidden items-center gap-6 font-sans text-xs tracking-widest uppercase md:flex lg:gap-8">
             <Link
               to="/"
-              className="text-black transition-colors duration-300 hover:text-white"
+              className="text-black transition-colors duration-300 hover:text-white font-bold"
             >
               {t("nav.home")}
               {/* Home */}
@@ -97,7 +97,7 @@ const Navigation: React.FC = () => {
 
             <Link
               to="/about"
-              className="text-black transition-colors duration-300 hover:text-white"
+              className="text-black transition-colors duration-300 hover:text-white font-bold"
             >
               {t("nav.about")}
               {/* About */}
@@ -105,7 +105,7 @@ const Navigation: React.FC = () => {
 
             <Link
               to="/team"
-              className="text-black transition-colors duration-300 hover:text-white"
+              className="text-black transition-colors duration-300 hover:text-white font-bold"
             >
               {t("nav.team")}
               {/* Team */}
@@ -113,16 +113,19 @@ const Navigation: React.FC = () => {
 
             <Link
               to="/contact"
-              className="text-black transition-colors duration-300 hover:text-white"
+              className="text-black transition-colors duration-300 hover:text-white font-bold"
             >
               {t("nav.contact")}
               {/* Contact */}
             </Link>
             <Link
               to="/updates"
-              className="text-black transition-colors duration-300 hover:text-white"
+              className="text-black transition-colors duration-300 hover:text-white font-bold"
             >
               {t("nav.updates")}
+            </Link>
+            <Link to="/commitments" className="text-black transition-colors duration-300 hover:text-white font-bold">
+              {t("nav.commitments")}
             </Link>
           </div>
           <div className="flex items-center gap-2 ml-4 border-l border-white/20 pl-4">
@@ -162,7 +165,7 @@ const Navigation: React.FC = () => {
           isMenuOpen ? "flex" : "hidden"
         } absolute top-full left-0 w-full flex-col items-start gap-6 bg-gray-800 py-10 px-8 shadow-2xl md:hidden`}
       >
-        {["Home", "About", "Team", "Contact", "Updates"].map((item) => (
+        {["Home", "About", "Team", "Contact", "Updates", "Commitments"].map((item) => (
           <Link
             key={item}
             to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
