@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import { gsap } from "gsap";
-import ThemeToggle from "../components/ThemeToggle";
+// import ThemeToggle from "../components/ThemeToggle";
 import teamData from "../data/team.json";
 import { useTranslation } from "react-i18next";
 
@@ -51,7 +51,7 @@ const Team: React.FC = () => {
 
         {/* HEADER */}
         <div className="flex justify-end mb-12">
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
         </div>
 
         <h1 className="text-4xl md:text-5xl font-semibold mb-10 text-black dark:text-white">

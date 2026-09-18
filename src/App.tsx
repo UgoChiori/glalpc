@@ -33,7 +33,7 @@ function App() {
     <>
       <Navigation />
     
-      <div className="bg-[#f0f0f0] min-h-screen w-full overflow-x-hidden flex flex-col items-stretch justify-start">
+      <div className="bg-[#f0f0f0] min-h-screen w-full overflow-x-hidden flex flex-col items-stretch justify-start ">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

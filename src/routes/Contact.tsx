@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone, MessageCircle } from "lucide-react";
 import toast from "react-hot-toast";
 import { Toaster } from "react-hot-toast";
 
@@ -52,63 +52,22 @@ const ContactPage: React.FC = () => {
     }
   };
 
-  // const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-  //   event.preventDefault();
-
-  //   const loadingToast = toast.loading("Sending message...");
-
-  //   setLoading(true);
-
-  //   const formData = new FormData(event.currentTarget);
-  //   formData.append("access_key", "6688f286-52e5-43ac-849a-897ee0d0270c");
-
-  //   try {
-  //     const res = await fetch("https://api.web3forms.com/submit", {
-  //       method: "POST",
-  //       body: formData,
-  //     });
-
-  //     const data = await res.json();
-
-  //     if (data.success) {
-  //       console.log(data, "Success");
-  //       toast.success("Message sent successfully ✔️", {
-  //         id: loadingToast,
-  //       });
-
-  //       event.currentTarget.reset();
-  //     } else {
-  //       console.error(data, "Error");
-  //       toast.error(data.message || "Something went wrong ❌", {
-  //         id: loadingToast,
-  //       });
-  //     }
-  //   } catch (error) {
-  //     console.error(error, "Network Error");
-
-  //     toast.error("Network error. Try again ❌", {
-  //       id: loadingToast,
-  //     });
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
   return (
-    <section className="bg-[#f8f3ed] min-h-screen py-12 px-6">
+    <section className="bg-[#f8f3ed] min-h-screen py-12 px-6 ">
       <Toaster position="top-right" reverseOrder={false} />
-      <div className="max-w-7xl mx-auto border border-black/10 p-6 md:p-12 bg-[#f8f3ed]">
+      <div className="max-w-7xl mx-auto border border-black/10 p-6 md:p-12 bg-[#f8f3ed] bg-gray-800 text-gray-800">
         {/* GRID */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 ">
           {/* LEFT */}
           <div className="flex flex-col ">
             <div>
-              <h1 className="text-4xl md:text-5xl font-semibold leading-none text-black">
+              <h1 className="text-4xl md:text-5xl font-semibold leading-none text-white">
                 Contact
                 <br />
                 Info
               </h1>
 
-              <div className="w-10 h-[2px] bg-black mt-5"></div>
+              <div className="w-10 h-[2px] bg-white mt-5"></div>
             </div>
 
             {/* CONTACT DETAILS */}
@@ -118,26 +77,26 @@ const ContactPage: React.FC = () => {
               <div className="space-y-8 mt-10">
                 {/* NIGERIA OFFICE */}
                 <div>
-                  <h3 className="text-sm uppercase tracking-[0.2em] text-yellow-700 mb-4">
+                  <h3 className="text-sm uppercase tracking-[0.2em] font-semibold mb-4 text-white">
                     Nigeria Location
                   </h3>
 
                   {/* ADDRESS */}
                   <div className="flex items-start gap-3 mb-4">
-                    <MapPin size={18} className="text-yellow-700 mt-1" />
+                    <MapPin size={18} className="text-white mt-1" />
 
-                    <p className="text-gray-800 text-sm md:text-base leading-relaxed">
+                    <p className="text-white text-sm md:text-base leading-relaxed">
                       5 Atinuke Olabanji Street, Ikeja, Lagos, Nigeria 100001
                     </p>
                   </div>
 
                   {/* EMAIL */}
                   <div className="flex items-center gap-3 mb-4">
-                    <Mail size={18} className="text-yellow-700" />
+                    <Mail size={18} className="text-white" />
 
                     <a
                       href="mailto:attorneys@glalpc.com"
-                      className="text-gray-800 text-sm md:text-base hover:text-yellow-700 transition"
+                      className="text-white text-sm md:text-base hover:text-yellow-700 transition"
                     >
                       attorneys@glalpc.com
                     </a>
@@ -145,19 +104,19 @@ const ContactPage: React.FC = () => {
 
                   {/* PHONE */}
                   <div className="flex items-start gap-3">
-                    <Phone size={18} className="text-yellow-700 mt-1" />
+                    <Phone size={18} className="text-white mt-1" />
 
                     <div className="flex flex-col text-sm md:text-base">
                       <a
                         href="tel:+2347042662654"
-                        className="text-gray-800 hover:text-yellow-700 transition"
+                        className="text-white hover:text-yellow-700 transition"
                       >
                         +234 704 266 2654
                       </a>
 
                       <a
                         href="tel:+2347035610109"
-                        className="text-gray-800 hover:text-yellow-700 transition"
+                        className="text-gray-100 hover:text-yellow-700 transition"
                       >
                         +234 703 561 0109
                       </a>
@@ -167,15 +126,15 @@ const ContactPage: React.FC = () => {
 
                 {/* BRAZIL OFFICE */}
                 <div>
-                  <h3 className="text-sm uppercase tracking-[0.2em] text-yellow-700 mb-4">
+                  <h3 className="text-sm uppercase tracking-[0.2em] text-white mb-4">
                     Brazil Location
                   </h3>
 
                   {/* ADDRESS */}
                   <div className="flex items-start gap-3 mb-4">
-                    <MapPin size={18} className="text-yellow-700 mt-1" />
+                    <MapPin size={18} className="text-white mt-1" />
 
-                    <p className="text-gray-800 text-sm md:text-base leading-relaxed">
+                    <p className="text-white text-sm md:text-base leading-relaxed">
                       Advocacia FJ, Praça Dr. João Mendes, 42, 4th floor, Cj.
                       44, Downtown of São Paulo, Brazil
                     </p>
@@ -183,11 +142,13 @@ const ContactPage: React.FC = () => {
 
                   {/* PHONE */}
                   <div className="flex items-start gap-3">
-                    <Phone size={18} className="text-yellow-700 mt-1" />
+                    <MessageCircle size={18} className="text-white mt-1" />
 
                     <a
-                      href="tel:+5511986654733"
-                      className="text-gray-800 text-sm md:text-base hover:text-yellow-700 transition"
+                      href="https://wa.me/5511986654733"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white text-sm md:text-base hover:text-yellow-700 transition"
                     >
                       +55 11 98665-4733
                     </a>
@@ -202,7 +163,7 @@ const ContactPage: React.FC = () => {
             <form className="space-y-6" onSubmit={handleSubmit}>
               {/* FULL NAME */}
               <div>
-                <label className="block text-sm text-gray-700 mb-2">
+                <label className="block text-sm text-white mb-2">
                   Full Name
                 </label>
 
@@ -210,13 +171,13 @@ const ContactPage: React.FC = () => {
                   name="name"
                   type="text"
                   placeholder="E.g John Doe"
-                  className="w-full border-b border-gray-300 bg-transparent px-4 py-3 outline-none focus:border-yellow-700 transition"
+                  className="w-full border-b border-gray-300 bg-transparent px-4 py-3 outline-none focus:border-yellow-700 transition placeholder-gray-400"
                 />
               </div>
 
               {/* EMAIL */}
               <div>
-                <label className="block text-sm text-gray-700 mb-2">
+                <label className="block text-sm text-white mb-2">
                   Email Address
                 </label>
 
@@ -224,13 +185,13 @@ const ContactPage: React.FC = () => {
                   name="email"
                   type="email"
                   placeholder="E.g johndoe@example.com"
-                  className="w-full border-b border-gray-300 bg-transparent px-4 py-3 outline-none focus:border-yellow-700 transition"
+                  className="w-full border-b border-gray-300 bg-transparent px-4 py-3 outline-none focus:border-yellow-700 transition placeholder-gray-400"
                 />
               </div>
 
               {/* PHONE */}
               <div>
-                <label className="block text-sm text-gray-700 mb-2">
+                <label className="block text-sm text-white mb-2">
                   Phone Number
                 </label>
 
@@ -238,35 +199,31 @@ const ContactPage: React.FC = () => {
                   name="phone"
                   type="text"
                   placeholder="E.g 09000000000"
-                  className="w-full border-b border-gray-300 bg-transparent px-4 py-3 outline-none focus:border-yellow-700 transition"
+                  className="w-full border-b border-gray-300 bg-transparent px-4 py-3 outline-none focus:border-yellow-700 transition placeholder-gray-400"
                 />
               </div>
 
               {/* SUBJECT */}
               <div>
-                <label className="block text-sm text-gray-700 mb-2">
-                  Subject
-                </label>
+                <label className="block text-sm text-white mb-2">Subject</label>
 
                 <input
                   name="subject"
                   type="text"
                   placeholder="E.g Legal Consultation"
-                  className="w-full border-b border-gray-300 bg-transparent px-4 py-3 outline-none focus:border-yellow-700 transition"
+                  className="w-full border-b border-gray-300 bg-transparent px-4 py-3 outline-none focus:border-yellow-700 transition placeholder-gray-400"
                 />
               </div>
 
               {/* MESSAGE */}
               <div>
-                <label className="block text-sm text-gray-700 mb-2">
-                  Message
-                </label>
+                <label className="block text-sm text-white mb-2">Message</label>
 
                 <textarea
                   name="message"
                   rows={5}
                   placeholder="E.g I would like legal guidance regarding..."
-                  className="w-full border-b border-gray-300 bg-transparent px-4 py-3 outline-none focus:border-yellow-700 transition resize-none"
+                  className="w-full border-b border-gray-300 bg-transparent px-4 py-3 outline-none focus:border-yellow-700 transition resize-none placeholder-gray-400"
                 />
               </div>
 
@@ -274,7 +231,7 @@ const ContactPage: React.FC = () => {
               <button
                 type="submit"
                 disabled={loading}
-                className="bg-black text-white px-8 py-3 hover:bg-white hover:text-black transition cursor-pointer border border-black/10"
+                className="bg-gray-200 text-black px-8 py-3 hover:bg-black hover:text-white transition cursor-pointer border border-black/10"
               >
                 {loading ? "Sending..." : "Send Message"}
               </button>
