@@ -45,7 +45,7 @@ const Team: React.FC = () => {
   return (
     <div
       ref={componentRef}
-      className="py-20 px-6 md:px-12 lg:px-24 bg-white dark:bg-gray-900 min-h-screen"
+      className="py-20 px-6 md:px-12 lg:px-24 bg-gray-900 min-h-screen"
     >
       <div className="max-w-7xl mx-auto">
 
@@ -54,7 +54,7 @@ const Team: React.FC = () => {
           {/* <ThemeToggle /> */}
         </div>
 
-        <h1 className="text-4xl md:text-5xl font-semibold mb-10 text-black dark:text-white">
+        <h1 className="text-4xl md:text-5xl font-semibold mb-10 text-white">
      {t("team.title")}
         </h1>
 
@@ -64,7 +64,7 @@ const Team: React.FC = () => {
             <div
               key={member.id}
               onClick={() => setSelectedMember(member)}
-              className="cursor-pointer bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden hover:shadow-xl transition"
+              className="cursor-pointer bg-gray-800 shadow-md rounded-lg overflow-hidden hover:shadow-xl transition"
             >
               <img
                 src={member.image}
@@ -73,10 +73,10 @@ const Team: React.FC = () => {
               />
 
               <div className="p-4">
-                <h3 className="text-lg font-bold text-black dark:text-white">
+                <h3 className="text-lg font-bold text-white">
                   {member.name}
                 </h3>
-                <p className="text-sm text-gray-500 uppercase">
+                <p className="text-sm text-gray-100 uppercase">
                   {member.role}
                 </p>
               </div>
@@ -94,7 +94,7 @@ const Team: React.FC = () => {
     onTouchMove={(e) => e.stopPropagation()}
   >
     <div
-      className="modal-content relative w-full max-w-4xl h-[90vh] md:h-[85vh] bg-white dark:bg-gray-900 rounded-xl shadow-2xl overflow-y-auto md:overflow-hidden flex flex-col md:flex-row"
+      className="modal-content relative w-full max-w-4xl h-[90vh] md:h-[85vh] bg-gray-900 rounded-xl shadow-2xl overflow-y-auto md:overflow-hidden flex flex-col md:flex-row"
       onClick={(e) => e.stopPropagation()}
     >
       {/* CLOSE BUTTON */}
@@ -117,25 +117,25 @@ const Team: React.FC = () => {
       {/* SCROLLABLE CONTENT: Scrolls independently on desktop, flows naturally on mobile */}
       <div className="w-full md:w-1/2 h-auto md:h-full overflow-y-visible md:overflow-y-auto p-6 space-y-4 scroll-smooth">
         <div>
-          <h2 className="text-2xl font-semibold text-black dark:text-white">
+          <h2 className="text-2xl font-semibold text-white">
             {selectedMember.name}
           </h2>
-          <p className="text-yellow-700 uppercase text-sm font-medium mt-1">
+          <p className="text-gray-200 uppercase text-sm font-medium mt-1">
             {selectedMember.role}
           </p>
         </div>
 
-        <p className="text-gray-700 dark:text-gray-300 text-sm md:text-base leading-relaxed">
+        <p className="text-gray-100 dark:text-gray-300 text-sm md:text-base leading-relaxed">
           {selectedMember.bio}
         </p>
 
         {/* QUALIFICATIONS */}
         {selectedMember.qualifications?.length > 0 && (
           <div>
-            <h3 className="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-2 mt-4">
+            <h3 className="text-xs font-semibold uppercase tracking-wider text-gray-100  mb-2 mt-4">
               Qualifications
             </h3>
-            <ul className="list-disc pl-5 text-sm space-y-1 text-gray-700 dark:text-gray-300">
+            <ul className="list-disc pl-5 text-sm space-y-1 text-gray-100">
               {selectedMember.qualifications.map((q: string, i: number) => (
                 <li key={i}>{q}</li>
               ))}
@@ -146,10 +146,10 @@ const Team: React.FC = () => {
         {/* EXPERIENCE */}
         {selectedMember.experience?.length > 0 && (
           <div>
-            <h3 className="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-2 mt-4">
+            <h3 className="text-xs font-semibold uppercase tracking-wider text-gray-100 mb-2 mt-4">
               Experience
             </h3>
-            <ul className="list-disc pl-5 text-sm space-y-1 text-gray-700 dark:text-gray-300">
+            <ul className="list-disc pl-5 text-sm space-y-1 text-gray-100">
               {selectedMember.experience.map((e: string, i: number) => (
                 <li key={i}>{e}</li>
               ))}
@@ -160,10 +160,10 @@ const Team: React.FC = () => {
         {/* PUBLICATIONS */}
         {selectedMember.publications?.length > 0 && (
           <div>
-            <h3 className="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-2 mt-4">
+            <h3 className="text-xs font-semibold uppercase tracking-wider text-gray-100 mb-2 mt-4">
               Publications
             </h3>
-            <ul className="list-disc pl-5 text-sm space-y-1 text-gray-700 dark:text-gray-300">
+            <ul className="list-disc pl-5 text-sm space-y-1 text-gray-100">
               {selectedMember.publications.map((p: string, i: number) => (
                 <li key={i}>{p}</li>
               ))}
@@ -174,13 +174,13 @@ const Team: React.FC = () => {
         {/* CONTACT */}
         {selectedMember.contact && (
           <div>
-            <h3 className="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-2 mt-4">
+            <h3 className="text-xs font-semibold uppercase tracking-wider text-gray-100 mb-2 mt-4">
               Contact
             </h3>
-            <ul className="text-sm space-y-1 text-gray-700 dark:text-gray-300 break-words">
+            <ul className="text-sm space-y-1 text-gray-100 break-words">
               {selectedMember.contact.email && (
                 <li>
-                  <a href={`mailto:${selectedMember.contact.email}`} className="hover:underline text-blue-600 dark:text-blue-400">
+                  <a href={`mailto:${selectedMember.contact.email}`} className="hover:underline text-gray-100 ">
                     {selectedMember.contact.email}
                   </a>
                 </li>

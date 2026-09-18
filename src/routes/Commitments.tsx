@@ -10,15 +10,11 @@ const Commitments: React.FC = () => {
       <div className="mx-auto max-w-6xl">
         {/* Heading */}
         <div className="mb-14 max-w-3xl">
-          {/* <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-yellow-600">
-            Our Commitments
-          </p> */}
-
           <h1 className="text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
             {t("about.heading2")}
           </h1>
 
-          <div className="mt-5 h-1 w-16 rounded-full bg-yellow-600" />
+          <div className="mt-5 h-1 w-16 rounded-full bg-gray-100" />
         </div>
 
         {/* Content */}
@@ -37,7 +33,7 @@ const Commitments: React.FC = () => {
                 {t("about.csrLinksTitle")}
               </h2>
 
-              <p className="mt-2 text-sm leading-6 text-gray-400">
+              <p className="mt-2 text-sm leading-6 text-gray-100">
                 Explore the initiatives and organisations we support.
               </p>
             </div>
