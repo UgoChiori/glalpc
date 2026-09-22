@@ -5,14 +5,12 @@
   "nav.updates": "Updates",
   "nav.contact": "Contact",
   "nav.commitments": "Commitments",
-   
   "hero.title": "Strategic Legal Advisory for a Global Landscape",
-
   "hero.description": "We provide world-class legal guidance, enabling clients to navigate complex cross-border transactions with clarity, confidence, and trust.",
   "hero.about": "About Us",
   "hero.contact": "Contact Us",
   "hero.learnMore": "Learn More",
-    "featuredNews": {
+  "featuredNews": {
     "heading": "Insights & Legal Updates",
     "featuredLabel": "Featured Article",
     "readFull": "Read full article",
@@ -22,17 +20,13 @@
     "item1Title": "Understanding Copyright for artistic works in Nigeria",
     "item2Title": "Understanding Employment Contracts in Modern Workplaces",
     "item3Title": "Key Compliance Requirements for New Businesses"
-    
-},
-
-"moreNews": {
+  },
+  "moreNews": {
     "heading": "Latest Insights",
     "readMore": "Read more",
-
     "card1Title": "LEGAL TIPS FOR ENTREPRENEURS",
     "card1Desc": "Vital tips to consider when starting a business in Nigeria. Understanding legal structure, registration, and compliance can protect your business from future risks.",
     "card1Author": "Jane Nwabuoku Esq.",
-
     "card2Title": "Corporate Training and Employment Bond: Safeguarding The Investment",
     "card2Desc": "By Oluwasegun Afolabi Ezra"
   },
@@ -45,7 +39,7 @@
     "terms": "Terms of Service",
     "designedBy": "Designed & Developed by"
   },
-    "about": {
+  "about": {
     "heading": "About Our Firm",
     "heading2": "Our Commitments",
     "heroTitle": "Seasoned Expertise on a Global Stage",
@@ -53,7 +47,7 @@
     "body1": "Our expertise goes beyond legal advisory services, as we have also managed legal transactions involving multiple stakeholders and parties in diverse jurisdictions. This experience has exposed us to different legal systems, cultures, and practices and has honed our skills in cross-cultural communication and negotiation.",
     "body2": "With our experience in international legal transactions and management, we have provided legal guidance and leadership to businesses and individuals across borders. We are uniquely positioned to navigate the complexities of the global legal environment.",
     "body3": "Additionally, we have engaged in continuous professional development as we constantly seek to sharpen our knowledge in the legal field. We have attended training programs, seminars, and conferences on international law to keep abreast of changes and developments in the industry.",
-      "body4": "Our commitments reflect our commitment to giving back to society. We actively participate in legal awareness programs, community education, and pro bono legal support for underserved communities.",
+    "body4": "Our commitments reflect our commitment to giving back to society. We actively participate in legal awareness programs, community education, and pro bono legal support for underserved communities.",
     "csrLinksTitle": "Our Commitments",
     "csrLink1": {
       "label": "Send a Child to School",
@@ -64,9 +58,7 @@
       "url": "https://www.linkedin.com/company/cross-border-legal-practice-ai/"
     },
     "callout": "Overall, our experience in international legal transactions and management makes us a go-to law firm for clients seeking legal expertise and leadership in navigating the complexities of the global legal landscape."
-    
   },
-
   "article": {
     "back": "Back to Home",
     "category": "Entrepreneurship",
@@ -74,16 +66,12 @@
     "author": "By Jane Nwabuoku Esq.",
     "date": "September 1, 2024",
     "subtitle": "International & Domestic Commercial Law",
-
     "introTitle": "Introduction",
     "intro1": "As an entrepreneur in Nigeria, understanding the legal framework is crucial for business success.",
     "intro2": "Starting and running a business in Nigeria comes with both opportunities and challenges.",
     "intro3": "Ensuring legal compliance protects your business and supports long-term growth.",
-
     "quote1": "“Entrepreneurship in Nigeria requires more than business acumen — it requires legal awareness and strategic compliance.”",
-
     "tipsTitle": "Essential Legal Tips For Entrepreneurs",
-
     "tips": [
       {
         "title": "Choose The Right Business Structure",
@@ -126,45 +114,36 @@
         "text": "Early legal guidance prevents costly mistakes."
       }
     ],
-
     "structureTitle": "Choosing The Right Business Structure",
     "structureText": "Business structure affects liability, taxation, compliance, and funding.",
-
     "taxTitle": "Understanding Tax Obligations",
     "taxText1": "Entrepreneurs must comply with Nigeria’s tax system.",
     "taxText2": "Taxes may include VAT, PAYE, CIT, and withholding tax.",
-
     "ipTitle": "Intellectual Property Protection",
     "ipText1": "IP protection is essential for modern businesses.",
     "ipText2": "Register trademarks, copyrights, and patents.",
-
     "conclusionTitle": "Conclusion",
     "conclusion1": "Entrepreneurship requires legal awareness.",
     "conclusion2": "Compliance helps reduce risks and supports growth.",
     "conclusion3": "Legal guidance early can prevent costly mistakes."
   },
-    "corp": {
+  "corp": {
     "back": "Back to Home",
     "category": "Uncategorized",
     "title": "Corporate Training and Employment Bond: Safeguarding The Investment",
     "author": "By Oluwasegun Afolabi Ezra",
     "date": "July 1, 2025",
     "subtitle": "Corporate & Commercial Associate, GLA Legal Practitioners",
-
     "introTitle": "Introduction",
     "intro1": "Employee training is a critical investment.",
     "intro2": "Training improves productivity and innovation.",
     "intro3": "However, it comes with financial costs.",
-
     "quote1": "Training is an investment — and every investment deserves protection.",
-
     "section1Title": "Employment Bond or Training Bond",
     "section1Text1": "A legal agreement to protect training investments.",
     "section1Text2": "Employees agree to stay or refund training costs.",
-
     "simpleTitle": "In Simple Terms",
     "simpleText": "Employees either stay for a period or repay training costs.",
-
     "conditionsTitle": "Conditions For Enforceability",
     "conditions": [
       "The bond must be voluntary.",
@@ -174,7 +153,6 @@
       "Fair cost reflection.",
       "No employer breach."
     ],
-
     "bestPracticesTitle": "Best Practices For Employers",
     "draftingTitle": "Drafting The Agreement",
     "drafting": [
@@ -183,7 +161,6 @@
       "Employees should get legal advice.",
       "Signed before training."
     ],
-
     "safeguardsTitle": "Practical Safeguards",
     "safeguards": [
       "Define repayment clearly.",
@@ -191,18 +168,14 @@
       "Ensure fairness.",
       "Use legal review."
     ],
-
     "clarityTitle": "Clarity Is Essential",
     "clarityText": "Agreements must be clear and separate from general policies.",
-
     "exampleTitle": "Example",
     "exampleText": "100% repayment if leaving within 6 months; 50% within one year.",
-
     "conclusionTitle": "Conclusion",
     "conclusion1": "Training strengthens organisations.",
     "conclusion2": "Bonds balance investment and employee mobility.",
     "conclusion3": "Proper structure is essential.",
-
     "referencesTitle": "References",
     "references": [
       "Dr Victor Balogun & Ors v FUTA — NICN/AK/49/2015",
@@ -210,36 +183,31 @@
       "Northern Thunderbird Air Inc v Van Haren (2011) BCSC 837"
     ]
   },
-   "cyber": {
+  "cyber": {
     "back": "Back to Home",
     "category": "Technology",
     "title": "Emerging Trends In Cybersecurity Law And Data Privacy And Its Impact On Individuals And Organizations",
     "author": "By Omolade Olalemi Esq.",
     "date": "August 21, 2024",
-
     "body": [
       "The world today is digitally interconnected.",
       "This is due to social media, e-commerce, and cloud computing.",
       "This has led to massive data creation and privacy concerns.",
       "Governments are creating laws to address these issues."
     ],
-
     "quote": "The exponential increase in data creation has created major privacy and security challenges.",
-
     "globalTitle": "Global Legal Framework",
     "global": [
       "The GDPR is a key global data protection law.",
       "It sets strict rules for data handling.",
       "It has influenced many countries worldwide."
     ],
-
     "nigeriaTitle": "The Nigerian Legal Framework",
     "nigeria": [
       "Nigeria has the Cybercrimes Act 2015.",
       "It criminalizes cyber-related offenses.",
       "The NDPA 2023 strengthens data protection laws."
     ],
-
     "ndpaTitle": "Key NDPA Principles",
     "ndpa": [
       "Data minimization",
@@ -248,7 +216,6 @@
       "Data access rights",
       "Compliance obligations"
     ],
-
     "challengesTitle": "Organizational Challenges",
     "challenges": [
       "Regulatory compliance",
@@ -257,24 +224,20 @@
       "Financial penalties",
       "Reputation risks"
     ],
-
     "impactTitle": "Impact On Individuals And Organizations",
     "impact": [
       "Individuals gain control over personal data.",
       "Organizations face stricter compliance rules.",
       "Non-compliance leads to penalties."
     ],
-
     "statTitle": "Important Statistic",
     "statText": "Over 81% of companies have experienced data exposure due to weak governance.",
-
     "conclusionTitle": "Conclusion",
     "conclusion": [
       "Cybersecurity laws will continue to evolve.",
       "New technologies create new risks.",
       "Compliance is now a strategic necessity."
     ],
-
     "referencesTitle": "References",
     "references": [
       "GDPR (EU) 2016/679",
@@ -284,43 +247,125 @@
     ]
   },
   "team": {
-  "title": "Meet Our Team"
-},
-"copyright": {
-  "back": "Back to Home",
-  "category": "Entertainment",
-  "title": "Understanding Copyright For Artistic Works In Nigeria",
-  "author": "By Oluwanifemi Ogunmodede",
-  "date": "October 6, 2025",
-  "subtitle": "Corporate & Commercial Associate, G L Agbomoagan Legal Practitioners & Consultants",
-
-  "body": [
-    "In Nigeria’s creative industry, copyright law protects original creators.",
-    "It applies across art, music, fashion, photography, and digital media.",
-    "Knowing your rights is essential for every creator."
-  ],
-
-  "quote": "Copyright protection exists to preserve originality, reward creativity, and safeguard artistic expression.",
-
-  "section1Title": "Artistic Works Protected Under Nigerian Law",
-  "section1": [
-    "Artistic works include paintings, drawings, sculptures, photography, and more.",
-    "They are protected under the Nigerian Copyright Act (as amended in 2022)."
-  ],
-
-  "section2Title": "Copyright Registration In Nigeria",
-  "section2": [
-    "Copyright exists automatically upon creation.",
-    "Registration with the NCC serves as proof of ownership."
-  ],
-
-  "section3Title": "Rights Of The Author",
-  "section3": [
-    "Authors have economic rights to control use of their work.",
-    "They also have moral rights to protect reputation and authorship."
-  ],
-
-  "disclaimer": "This content is for informational purposes only and does not constitute legal advice."
-}
-
+    "title": "Meet Our Team"
+  },
+  "copyright": {
+    "back": "Back to Home",
+    "category": "Entertainment",
+    "title": "Understanding Copyright For Artistic Works In Nigeria",
+    "author": "By Oluwanifemi Ogunmodede",
+    "date": "October 6, 2025",
+    "subtitle": "Corporate & Commercial Associate, G L Agbomoagan Legal Practitioners & Consultants",
+    "body": [
+      "In Nigeria’s creative industry, copyright law protects original creators.",
+      "It applies across art, music, fashion, photography, and digital media.",
+      "Knowing your rights is essential for every creator."
+    ],
+    "quote": "Copyright protection exists to preserve originality, reward creativity, and safeguard artistic expression.",
+    "section1Title": "Artistic Works Protected Under Nigerian Law",
+    "section1": [
+      "Artistic works include paintings, drawings, sculptures, photography, and more.",
+      "They are protected under the Nigerian Copyright Act (as amended in 2022)."
+    ],
+    "section2Title": "Copyright Registration In Nigeria",
+    "section2": [
+      "Copyright exists automatically upon creation.",
+      "Registration with the NCC serves as proof of ownership."
+    ],
+    "section3Title": "Rights Of The Author",
+    "section3": [
+      "Authors have economic rights to control use of their work.",
+      "They also have moral rights to protect reputation and authorship."
+    ],
+    "disclaimer": "This content is for informational purposes only and does not constitute legal advice."
+  },
+  "brazil": {
+    "eyebrow": "Nigeria–Brazil Legal Practice Partnership",
+    "title": "Institutional Profile:",
+    "firmName": "Advocacia FCJ",
+    "heroDesc": "A Brazil-based legal partner providing cross-border legal, immigration, corporate, trade, and advisory services for Nigerian citizens, businesses, and international clients.",
+    "location": "São Paulo, Brazil",
+    "founded": "Founded in 2015",
+    "internationalPractice": "International Practice",
+    "section1": {
+      "title": "Firm Overview",
+      "body": "Founded on October 15, 2015, Advocacia FCJ has established itself as a law firm of excellence. With its new headquarters strategically located at Praça Dr. João Mendes, 42, in the Historic Center of São Paulo, the firm is positioned in Latin America's primary legal and financial hub.",
+      "body2": "The firm boasts a robust track record of litigation and advisory success, having successfully managed over 350 cases across the Federal Courts, Military Justice of the Union, Labor Courts, and State Courts."
+    },
+    "section2": {
+      "title": "Global Reach & Cross-Border Asset Management",
+      "body": "Advocacia FCJ already possesses a strong international footprint and extensive experience in cross-border legal services. We currently provide trusted legal counsel to an active portfolio of clients located in Australia, Germany, Portugal, Japan, and Austria.",
+      "body2": "Our advisory for these international clients focuses heavily on the maintenance, protection, and strategic management of their assets, real estate, and wealth within Brazil.",
+      "body3": "This established global reach ensures our firm is highly proficient in remote case management and meeting the specific needs of foreign citizens and investors."
+    },
+    "section3": {
+      "title": "Leadership",
+      "subtitle": "Dr. Flávio Conrado Junior — CEO",
+      "intro": "The firm is led by its founder, Dr. Flávio Conrado Junior, whose career is defined by extensive institutional and academic experience.",
+      "publicSector": {
+        "title": "Public Sector Expertise",
+        "body": "Served for 18 years (1997 to 2015) as a Federal Public Servant in the Military Justice of the Union, with a distinguished role in the Judicial Police."
+      },
+      "academic": {
+        "title": "Academic Background",
+        "body": "Graduated in Legal Sciences from Universidade Brás Cubas (2000–2005), with a Postgraduate Degree in Labor Law and Legal Careers from Instituto Andreucci Proordem (2012)."
+      },
+      "professional": {
+        "title": "Professional Practice",
+        "body": "Approved by the Brazilian Bar Association (OAB) in 2015, he immediately established his own firm, leading complex negotiations, civil and labor litigation, and corporate advisory services."
+      }
+    },
+    "section4": {
+      "title": "Cultural Bridge & Trust",
+      "subtitle": "Afro-Brazilian Representation",
+      "body": "Advocacia FCJ is deeply proud of its roots and recognizes the importance of empathy, representation, and cultural alignment in legal services.",
+      "body2": "We offer the Nigerian community highly specialized legal care led by Afro-descendant lawyers born in Brazil. Our primary goal is to ensure that every Nigerian citizen, investor, or entrepreneur feels fully understood, protected, and \"at home\" while navigating the Brazilian legal system."
+    },
+    "section5": {
+      "title": "Immigration, Humanitarian & Civil Rights Desk",
+      "body": "To provide full-scale support for the Nigerian diaspora and global mobility, the firm acts across all legally viable areas of International Law.",
+      "visa": {
+        "title": "Visas & Naturalization",
+        "body": "Comprehensive assistance for foreigners seeking immigration visas, work permits, humanitarian visas, and full naturalization processes."
+      },
+      "civilRights": {
+        "title": "Civil & Social Rights",
+        "body": "Defense of the civil, constitutional, and labor rights of expatriates and workers in Brazil, ensuring compliance with local laws and international agreements."
+      },
+      "privateInternational": {
+        "title": "Private International Law",
+        "body": "Recognition of foreign judgments, cross-border family law including marriage, divorce and succession, and international wealth planning."
+      }
+    },
+    "section6": {
+      "title": "Foreign Trade & Customs Clearance",
+      "subtitle": "Brazil Desk",
+      "body": "To fully meet the demands of Foreign Direct Investment (FDI) and bilateral trade, Advocacia FCJ has expanded its team with highly specialized capabilities.",
+      "body2": "Led by our key collaborator, Alan — a lawyer approved by the OAB with deep expertise as a Customs Broker (Despachante) — the firm offers direct operational support for:",
+      "bureaucracy": {
+        "title": "Administrative & State Bureaucracy",
+        "body": "Expert navigation of Brazilian State Agencies and administrative spheres, removing bureaucratic bottlenecks for foreign businesses."
+      },
+      "customs": {
+        "title": "Customs Clearance & Trade",
+        "body": "Agility in the release of goods, import/export compliance, and trade facilitation between Nigeria and Brazil."
+      },
+      "maritime": {
+        "title": "Maritime & Aeronautical Law",
+        "body": "Legal and operational advisory for international transport logistics, port and airport disputes, and customs regulatory frameworks."
+      }
+    },
+    "section7": {
+      "title": "Corporate Structure & International Banking Infrastructure",
+      "body": "Operating as a formally registered legal corporate entity established in 2022, Advocacia FCJ possesses the financial infrastructure required for cross-border operations.",
+      "body2": "The firm holds international corporate bank accounts, including with C6 / JP Morgan Chase Bank, enabling the direct receipt, processing, and remittance of funds in Euros (EUR), US Dollars (USD), and Brazilian Reais (BRL).",
+      "body3": "Furthermore, the firm maintains corporate accounts with major Brazilian traditional and investment banks, such as Banco do Brasil and BTG Pactual / Regent Bank.",
+      "body4": "This financial setup supports secure, transparent, and agile fee-sharing, client remittances, and investment structuring, making the firm ready for international revenue integration with its partners."
+    },
+    "section8": {
+      "title": "Strategic Alignment for the Partnership",
+      "body": "The combination of Dr. Flávio Conrado Jr.'s deep experience in complex litigation with our specialized desk for foreign trade, immigration, and administrative law creates a strong foundation for the Nigeria–Brazil legal partnership.",
+      "body2": "Advocacia FCJ is equipped to provide legal support to Nigerian enterprises and citizens establishing operations or residing in Brazil, expanding its international practice directly into the Nigeria–Brazil corridor."
+    }
+  }
 }

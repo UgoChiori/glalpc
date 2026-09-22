@@ -1,4 +1,4 @@
-
+import {useState} from "react";
 import { Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Home from "./routes/Home";
@@ -17,7 +17,8 @@ import LegalTips from "./news/LegalTips";
 import EntrepreneurLegalTips from "./news/EntrepreneurLegalTips";
 import CyberSecurityLaw from "./news/CyberSecurityLaw";
 import Commitments from "./routes/Commitments";
-
+import Brazil from "./routes/Brazil";
+import LocationModal from "./components/LocationModal";
 
 gsap.registerPlugin(ScrollTrigger, SplitText, useGSAP);
 
@@ -29,6 +30,7 @@ gsap.ticker.add((time) => {
 gsap.ticker.lagSmoothing(0); 
 
 function App() {
+  const [showLocationModal, setShowLocationModal] = useState(true);
   return (
     <>
       <Navigation />
@@ -45,10 +47,16 @@ function App() {
           <Route path="/commitments" element={<Commitments />} /> 
           <Route path="/news/legal-entrepreneur" element={<EntrepreneurLegalTips />} />
           <Route path="/news/cyber-security-law" element={<CyberSecurityLaw />} />
+          <Route path="/brazil" element={<Brazil />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
       <Footer />
+        {showLocationModal && (
+        <LocationModal
+          onClose={() => setShowLocationModal(false)}
+        />
+      )}
     </>
   );
 }

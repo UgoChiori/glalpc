@@ -321,7 +321,118 @@
   ],
 
   "disclaimer": "Este conteúdo é apenas informativo e não constitui aconselhamento jurídico."
+},
+
+"brazil": {
+  "eyebrow": "Parceria Jurídica Nigéria–Brasil",
+
+  "title": "Perfil Institucional:",
+  "firmName": "Advocacia FCJ",
+
+  "heroDesc": "Escritório de advocacia com atuação no Brasil e experiência em serviços jurídicos internacionais, imigração, direito empresarial, comércio exterior e assessoria jurídica para cidadãos, empresas e investidores nigerianos e internacionais.",
+
+  "location": "São Paulo, Brasil",
+  "founded": "Fundado em 2015",
+  "internationalPractice": "Atuação Internacional",
+
+  "section1": {
+    "title": "Perfil do Escritório",
+    "body": "Fundada em 15 de outubro de 2015, a Advocacia FCJ consolidou-se como um escritório de excelência. Com sua nova sede estrategicamente localizada na Praça Dr. João Mendes, 42, no Centro Histórico de São Paulo, o escritório está situado em um dos principais polos jurídicos e financeiros da América Latina.",
+    "body2": "O escritório possui sólida experiência em contencioso e consultoria jurídica, tendo conduzido com êxito mais de 350 processos perante a Justiça Federal, a Justiça Militar da União, a Justiça do Trabalho e a Justiça Estadual."
+  },
+
+  "section2": {
+    "title": "Atuação Global e Gestão Patrimonial Transfronteiriça",
+    "body": "A Advocacia FCJ já possui forte atuação internacional e ampla experiência na prestação de serviços jurídicos transfronteiriços. Atualmente, prestamos assessoria jurídica a uma carteira ativa de clientes localizados na Austrália, Alemanha, Portugal, Japão e Áustria.",
+    "body2": "Nossa atuação para esses clientes internacionais concentra-se especialmente na manutenção, proteção e gestão estratégica de seus ativos, imóveis e patrimônio no Brasil.",
+    "body3": "Essa experiência internacional consolidada permite ao escritório atuar com eficiência na gestão remota de processos e atender às necessidades específicas de cidadãos estrangeiros e investidores que possuem interesses no Brasil."
+  },
+
+  "section3": {
+    "title": "Liderança",
+    "subtitle": "Dr. Flávio Conrado Junior — CEO",
+    "intro": "O escritório é liderado por seu fundador, Dr. Flávio Conrado Junior, cuja trajetória profissional é marcada por ampla experiência institucional e acadêmica.",
+
+    "publicSector": {
+      "title": "Experiência no Setor Público",
+      "body": "Atuou por 18 anos (1997 a 2015) como servidor público federal na Justiça Militar da União, exercendo função de destaque na Polícia Judiciária. Essa longa trajetória proporcionou amplo conhecimento sobre o funcionamento da administração pública federal, segurança institucional e conformidade governamental."
+    },
+
+    "academic": {
+      "title": "Formação Acadêmica",
+      "body": "Graduou-se em Ciências Jurídicas pela Universidade Brás Cubas (2000–2005) e possui Pós-Graduação em Direito do Trabalho e Carreiras Jurídicas pelo Instituto Andreucci Proordem (2012)."
+    },
+
+    "professional": {
+      "title": "Atuação Profissional",
+      "body": "Foi aprovado no Exame da Ordem dos Advogados do Brasil (OAB) em 2015 e, no mesmo ano, fundou seu próprio escritório, passando a atuar na condução de negociações complexas, contencioso cível e trabalhista e consultoria empresarial."
+    }
+  },
+
+  "section4": {
+    "title": "Ponte Cultural e Confiança",
+    "subtitle": "Representatividade Afro-Brasileira",
+    "body": "A Advocacia FCJ tem orgulho de suas raízes e reconhece a importância da empatia, da representatividade e da sintonia cultural na prestação de serviços jurídicos.",
+    "body2": "Oferecemos à comunidade nigeriana atendimento jurídico especializado, conduzido por profissionais afrodescendentes nascidos no Brasil. Nosso principal objetivo é garantir que cada cidadão, investidor ou empreendedor nigeriano se sinta plenamente compreendido, protegido e acolhido ao lidar com o sistema jurídico brasileiro."
+  },
+
+  "section5": {
+    "title": "Núcleo de Imigração, Direitos Humanos e Direitos Civis",
+    "body": "Com o objetivo de oferecer suporte completo à diáspora nigeriana e às demandas relacionadas à mobilidade internacional, o escritório atua nas áreas juridicamente aplicáveis do Direito Internacional.",
+
+    "visa": {
+      "title": "Vistos e Naturalização",
+      "body": "Assessoria completa para estrangeiros que buscam vistos de imigração, autorizações de trabalho, vistos humanitários e processos de naturalização."
+    },
+
+    "civilRights": {
+      "title": "Direitos Civis e Sociais",
+      "body": "Defesa dos direitos civis, constitucionais e trabalhistas de expatriados e trabalhadores no Brasil, assegurando a observância da legislação nacional e dos acordos internacionais aplicáveis."
+    },
+
+    "privateInternational": {
+      "title": "Direito Internacional Privado",
+      "body": "Reconhecimento de decisões judiciais estrangeiras, questões de Direito de Família com elementos internacionais, incluindo casamento, divórcio e sucessão, além de planejamento patrimonial internacional."
+    }
+  },
+
+  "section6": {
+    "title": "Comércio Exterior e Despacho Aduaneiro",
+    "subtitle": "Brazil Desk",
+    "body": "Para atender integralmente às demandas relacionadas ao investimento estrangeiro direto (IED) e ao comércio bilateral, a Advocacia FCJ ampliou sua equipe com competências altamente especializadas.",
+    "body2": "Liderada por nosso colaborador Alan, advogado regularmente inscrito na OAB e com ampla experiência como Despachante Aduaneiro, a equipe oferece suporte operacional direto nas seguintes áreas:",
+
+    "bureaucracy": {
+      "title": "Procedimentos Administrativos e Burocracia Estatal",
+      "body": "Atuação especializada junto aos órgãos públicos brasileiros e nas esferas administrativas, contribuindo para superar entraves burocráticos enfrentados por empresas estrangeiras."
+    },
+
+    "customs": {
+      "title": "Despacho Aduaneiro e Comércio Exterior",
+      "body": "Agilidade na liberação de mercadorias, conformidade em operações de importação e exportação e facilitação do comércio entre Nigéria e Brasil."
+    },
+
+    "maritime": {
+      "title": "Direito Marítimo e Aeronáutico",
+      "body": "Assessoria jurídica e operacional em logística de transporte internacional, disputas portuárias e aeroportuárias e questões regulatórias relacionadas ao comércio exterior e às operações aduaneiras."
+    }
+  },
+
+  "section7": {
+    "title": "Estrutura Corporativa e Infraestrutura Bancária Internacional",
+    "body": "Constituída formalmente como pessoa jurídica em 2022, a Advocacia FCJ possui infraestrutura financeira adequada para operações internacionais e transfronteiriças.",
+    "body2": "O escritório mantém contas bancárias corporativas internacionais, incluindo C6 / JP Morgan Chase Bank, possibilitando o recebimento, processamento e envio de recursos em Euros (EUR), Dólares Americanos (USD) e Reais Brasileiros (BRL).",
+    "body3": "Além disso, o escritório mantém contas corporativas junto a importantes instituições bancárias tradicionais e de investimento no Brasil, como Banco do Brasil e BTG Pactual / Regent Bank.",
+    "body4": "Essa estrutura financeira proporciona maior segurança, transparência e agilidade na divisão de honorários, remessas de valores de clientes e estruturação de investimentos, preparando o escritório para a integração financeira internacional com seus parceiros."
+  },
+
+  "section8": {
+    "title": "Alinhamento Estratégico para a Parceria",
+    "body": "A combinação da ampla experiência do Dr. Flávio Conrado Jr. em contencioso complexo com nosso núcleo especializado em comércio exterior, imigração e direito administrativo estabelece uma base sólida para a parceria jurídica entre Nigéria e Brasil.",
+    "body2": "A Advocacia FCJ está preparada para oferecer segurança jurídica e suporte especializado a empresas e cidadãos nigerianos que estejam estabelecendo operações ou residindo no Brasil, ampliando sua atuação internacional diretamente no corredor Nigéria–Brasil."
+  }
 }
+
 
 }
 

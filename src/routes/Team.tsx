@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 // import ThemeToggle from "../components/ThemeToggle";
 import teamData from "../data/team.json";
 import { useTranslation } from "react-i18next";
+import Brazil from "./Brazil";
 
 const Team: React.FC = () => {
   const componentRef = useRef<HTMLDivElement>(null);
@@ -62,27 +63,49 @@ const Team: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {teamData.map((member) => (
             <div
-              key={member.id}
-              onClick={() => setSelectedMember(member)}
-              className="cursor-pointer bg-gray-800 shadow-md rounded-lg overflow-hidden hover:shadow-xl transition"
-            >
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-full h-[320px] object-cover"
-              />
+  key={member.id}
+  onClick={() => setSelectedMember(member)}
+  className="cursor-pointer overflow-hidden rounded-lg bg-gray-800 shadow-md transition hover:shadow-xl"
+>
+  <img
+    src={member.image}
+    alt={member.name}
+    className="block w-full h-auto"
+  />
 
-              <div className="p-4">
-                <h3 className="text-lg font-bold text-white">
-                  {member.name}
-                </h3>
-                <p className="text-sm text-gray-100 uppercase">
-                  {member.role}
-                </p>
-              </div>
-            </div>
+  <div className="p-4">
+    <h3 className="text-lg font-bold text-white">
+      {member.name}
+    </h3>
+
+    <p className="text-sm uppercase text-gray-100">
+      {member.role}
+    </p>
+  </div>
+</div>
+            // <div
+            //   key={member.id}
+            //   onClick={() => setSelectedMember(member)}
+            //   className="cursor-pointer bg-gray-800 shadow-md rounded-lg overflow-hidden hover:shadow-xl transition"
+            // >
+            //   <img
+            //     src={member.image}
+            //     alt={member.name}
+            //     className="w-full h-[320px] object-cover"
+            //   />
+
+            //   <div className="p-4">
+            //     <h3 className="text-lg font-bold text-white">
+            //       {member.name}
+            //     </h3>
+            //     <p className="text-sm text-gray-100 uppercase">
+            //       {member.role}
+            //     </p>
+            //   </div>
+            // </div>
           ))}
         </div>
+        <Brazil />
       </div>
 
       {/* MODAL */}

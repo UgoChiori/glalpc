@@ -71,7 +71,7 @@ const Navigation: React.FC = () => {
       {/* MAIN NAV */}
       <div className="border-b border-white/10 bg-gray-300 backdrop-blur-md relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap font-bold tracking-[0.3em] text-[2rem] md:text-[4rem] lg:text-[6rem] text-black/[0.09] uppercase ">
+          <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap font-bold tracking-[0.3em] text-[2rem] md:text-[4rem] lg:text-[6rem] text-black/[0.3] uppercase ">
             G L Agbomoagan
           </span>
         </div>
@@ -124,7 +124,10 @@ const Navigation: React.FC = () => {
             >
               {t("nav.updates")}
             </Link>
-            <Link to="/commitments" className="text-black transition-colors duration-300 hover:text-white font-bold">
+            <Link
+              to="/commitments"
+              className="text-black transition-colors duration-300 hover:text-white font-bold"
+            >
               {t("nav.commitments")}
             </Link>
           </div>
@@ -165,16 +168,18 @@ const Navigation: React.FC = () => {
           isMenuOpen ? "flex" : "hidden"
         } absolute top-full left-0 w-full flex-col items-start gap-6 bg-gray-800 py-10 px-8 shadow-2xl md:hidden`}
       >
-        {["Home", "About", "Team", "Contact", "Updates", "Commitments"].map((item) => (
-          <Link
-            key={item}
-            to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-            onClick={closeMenu}
-            className="font-sans text-sm tracking-[0.2em] text-white uppercase border-b border-white/5 w-full pb-3"
-          >
-            {t(`nav.${item.toLowerCase()}`)}
-          </Link>
-        ))}
+        {["Home", "About", "Team", "Contact", "Updates", "Commitments"].map(
+          (item) => (
+            <Link
+              key={item}
+              to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+              onClick={closeMenu}
+              className="font-sans text-sm tracking-[0.2em] text-white uppercase border-b border-white/5 w-full pb-3"
+            >
+              {t(`nav.${item.toLowerCase()}`)}
+            </Link>
+          ),
+        )}
       </div>
     </nav>
   );

@@ -2,30 +2,38 @@
     {
         "id": 1,
         "name": "Lugard Gbenga Agbomoagan",
-        "role": "FIMC, CMC, FICM/Lead Attorney",
+        "role": "International Lawyer. Hospitality Executive. Entrepreneur. Cross-Border Legal Practice Advocate. ~Philanthropist",
         "image": "/images/team1.jpg",
-        "bio": "Lugard Gbenga Agbomoagan is the founder and lead attorney of GLALPC. With over 15 years of experience in corporate law, Lugard has successfully represented numerous clients in high-profile cases. He is known for his strategic approach and dedication to achieving favorable outcomes for his clients.",
+        "bio": "Lugard Gbenga Agbomoagan is a Nigerian legal practitioner, entrepreneur, hospitality executive, international legal policy advocate and philanthropist. He is Founder and Managing Partner of G. L. Agbomoagan Legal Practitioners & Consultants, Group Managing Director of The Jagz Hotel, and an Officer of the International Bar Association serving as Project Officer of the African Regional Forum. His work spans legal innovation, business leadership, education, philanthropy and cross-border legal practice across Africa.",
         "qualifications": [
-            "Bachelor of Laws (LL.B.) - University of Lagos",
-            "Master of Laws (LL.M.) in Corporate Law - Harvard Law School",
-            "Fellow of the Institute of Chartered Mediators and Conciliators (FICM)",
-            "Fellow of the Institute of Management Consultants (FIMC)"
+            "  Founder & Managing Partner, G. L. Agbomoagan Legal Practitioners & Consultants",
+            "Group Managing Director, The Jagz Hotel",
+            "Officer, International Bar Association (African Regional Forum)",
+            "Evaluator & Judge, IBA International Criminal Court Moot Competition",
+            "Founder, SEND A CHILD 2 SCHOOL AFRICA",
+            " Founder, Joseph & Oreoluwa Agbomoagan Foundation",
+            "Founder, Lugard Agbomoagan African Young Lawyers Excellence Awards",
+            " Established scholarship programmes from primary education to the Nigerian Law School",
+            "Established two academic prize awards at Ekiti State University",
+            "EKSU Alumni Hall of Fame inductee"
         ],
         "experience": [
-            "Lead counsel in a landmark corporate merger case resulting in a $500 million deal.",
-            "Successfully defended a multinational corporation in a high-stakes intellectual property dispute.",
-            "Advised several startups on corporate governance and compliance, leading to successful funding rounds."
+            "International Law.",
+            "Cross-Border Legal Practice",
+            "Corporate and Commercial Law",
+            " Hospitality & Tourism Law",
+            " Business Strategy",
+            " Hotel Development & Operations",
+            " International Business Advisory",
+            "Leadership & Organizational Development",
+            " Public Speaking",
+            " Entrepreneurship",
+            "Philanthropy & Social Impact",
+            " Education Development",
+            " Policy Advocacy"
         ],
-        "awards": [
-            "Best Corporate Lawyer of the Year - Nigerian Legal Awards 2022",
-            "Top 100 Most Influential Lawyers in Africa - African Legal Awards 2023",
-            "Excellence in Legal Practice Award - Lagos State Bar Association 2021"
-        ],
-        "publications": [
-            "Author of 'Corporate Law in Nigeria: A Comprehensive Guide' published in 2020.",
-            "Regular contributor to legal journals and magazines on topics related to corporate law and governance.",
-            "Speaker at international legal conferences on corporate law and dispute resolution."
-        ],
+        "awards": [],
+        "publications": [],
         "contact": {
             "email": "2cH4b@example.com",
             "phone": "+234 1 234 5678",
@@ -252,7 +260,7 @@
     {
         "id": 14,
         "name": "Ayodele Liman",
-        "role": "Head, Corporate Practice(RESIGNED)",
+        "role": "",
         "image": "/images/team3.jpg",
         "bio": "",
         "qualifications": [],
@@ -268,7 +276,7 @@
     {
         "id": 15,
         "name": "Jane Nwabuoku",
-        "role": "International & Domestic Commercial Law(RESIGNED)",
+        "role": "",
         "image": "/images/team4.jpg",
         "bio": "",
         "qualifications": [],
@@ -284,7 +292,7 @@
     {
         "id": 15,
         "name": "Omolade Olalemi  ",
-        "role": "Litigation & Advisory(RESIGNED)",
+        "role": "",
         "image": "/images/team5.jpg",
         "bio": "",
         "qualifications": [],
