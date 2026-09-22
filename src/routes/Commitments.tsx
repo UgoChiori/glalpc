@@ -8,7 +8,6 @@ const Commitments: React.FC = () => {
   return (
     <section className="bg-gray-950 px-6 py-20 md:px-12 lg:px-24">
       <div className="mx-auto max-w-6xl">
-        {/* Heading */}
         <div className="mb-14 max-w-3xl">
           <h1 className="text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
             {t("about.heading2")}
@@ -17,16 +16,13 @@ const Commitments: React.FC = () => {
           <div className="mt-5 h-1 w-16 rounded-full bg-gray-100" />
         </div>
 
-        {/* Content */}
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:gap-20">
-          {/* Main text */}
           <div className="flex items-start">
             <p className="max-w-2xl text-base leading-8 text-gray-300 md:text-lg">
               {t("about.body4")}
             </p>
           </div>
 
-          {/* CSR Links */}
           <div className="rounded-2xl border border-gray-800 bg-gray-900/70 p-6 shadow-xl md:p-8">
             <div className="mb-6">
               <h2 className="text-xl font-semibold text-white">

@@ -55,7 +55,7 @@ const EntrepreneurLegalTips: React.FC = () => {
   return (
     <section ref={pageRef} className="bg-[#f7f4ef] min-h-screen text-black">
 
-      {/* HERO */}
+    
       <div className="relative overflow-hidden border-b border-black/10">
         <div className="absolute inset-0 bg-gray-900 opacity-95"></div>
 
@@ -93,7 +93,7 @@ const EntrepreneurLegalTips: React.FC = () => {
         </div>
       </div>
 
-      {/* IMAGE */}
+ 
       <div className="max-w-7xl mx-auto px-6 pt-10 md:pt-14">
         <div className="article-image overflow-hidden rounded-3xl h-[300px] md:h-[550px] shadow-2xl">
           <img
@@ -104,7 +104,7 @@ const EntrepreneurLegalTips: React.FC = () => {
         </div>
       </div>
 
-      {/* BODY */}
+    
       <div className="max-w-4xl mx-auto px-6 py-12 md:py-16">
 
         <div className="article-content space-y-8 text-gray-800 leading-[2] text-[15px] md:text-[17px]">
@@ -160,7 +160,6 @@ const EntrepreneurLegalTips: React.FC = () => {
             ))}
           </div>
 
-          {/* remaining sections */}
           <h2 className="text-2xl md:text-3xl font-semibold text-black pt-10">
             {t("article.structureTitle")}
           </h2>

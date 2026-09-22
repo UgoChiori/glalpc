@@ -14,7 +14,7 @@ const MoreNews: React.FC = () => {
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* CARD 1 */}
+    
         <div className="bg-gray-100 rounded-lg shadow-sm overflow-hidden">
           <img
             src="/images/janeesq.jpeg"
@@ -45,7 +45,7 @@ const MoreNews: React.FC = () => {
           </div>
         </div>
 
-        {/* CARD 2 */}
+  
         <div className="bg-gray-100 rounded-lg shadow-sm overflow-hidden">
           <img
             src="/images/team13.jpg"

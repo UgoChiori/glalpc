@@ -13,12 +13,12 @@ const About: React.FC = () => {
     <section className="bg-gray-900 text-gray-200 py-12 px-6 md:px-12 lg:px-24 transition-colors duration-300 min-h-screen">
       <div className="mx-auto">
 
-        {/* Theme Toggle */}
+     
         <div className="flex justify-end mb-8">
           {/* <ThemeToggle /> */}
         </div>
 
-        {/* HEADER */}
+
         <div className="text-center mb-10">
           <h1 className="text-4xl md:text-5xl font-bold text-slate-100  mb-4">
             {t("about.heading")}
@@ -26,7 +26,7 @@ const About: React.FC = () => {
           <div className="h-1 w-20 bg-gray-100 mx-auto mb-8"></div>
         </div>
 
-        {/* HERO */}
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div className="order-2 lg:order-1">
             <h2 className="text-2xl font-semibold text-slate-100 mb-4">
@@ -51,7 +51,7 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        {/* BODY */}
+   
         <div className="max-w-none grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
 
           <div className="space-y-6">

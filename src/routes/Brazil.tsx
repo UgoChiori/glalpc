@@ -6,7 +6,7 @@ const Brazil = () => {
 
   return (
     <main className="min-h-screen bg-gray-950 text-gray-100">
-      {/* Hero */}
+    
       <section className="border-b border-gray-800 bg-gray-900">
         <div className="mx-auto max-w-7xl px-6 py-16 sm:px-8 lg:px-12 lg:py-24">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
@@ -55,11 +55,11 @@ const Brazil = () => {
         </div>
       </section>
 
-      {/* Profile Content */}
+
       <section className="mx-auto max-w-7xl px-6 py-16 sm:px-8 lg:px-12 lg:py-24">
         <div className="space-y-16">
 
-          {/* 01 */}
+         
           <ProfileSection
             number="01"
             title={t("brazil.section1.title")}
@@ -73,7 +73,7 @@ const Brazil = () => {
             }
           />
 
-          {/* 02 */}
+       
           <ProfileSection
             number="02"
             title={t("brazil.section2.title")}
@@ -90,7 +90,7 @@ const Brazil = () => {
             }
           />
 
-          {/* 03 */}
+    
           <ProfileSection
             number="03"
             title={t("brazil.section3.title")}
@@ -115,7 +115,7 @@ const Brazil = () => {
             </div>
           </ProfileSection>
 
-          {/* 04 */}
+       
           <ProfileSection
             number="04"
             title={t("brazil.section4.title")}
@@ -130,7 +130,7 @@ const Brazil = () => {
             }
           />
 
-          {/* 05 */}
+  
           <ProfileSection
             number="05"
             title={t("brazil.section5.title")}
@@ -154,7 +154,7 @@ const Brazil = () => {
             </div>
           </ProfileSection>
 
-          {/* 06 */}
+  
           <ProfileSection
             number="06"
             title={t("brazil.section6.title")}
@@ -186,7 +186,7 @@ const Brazil = () => {
             </div>
           </ProfileSection>
 
-          {/* 07 */}
+     
           <ProfileSection
             number="07"
             title={t("brazil.section7.title")}
@@ -206,7 +206,7 @@ const Brazil = () => {
             }
           />
 
-          {/* 08 */}
+   
           <ProfileSection
             number="08"
             title={t("brazil.section8.title")}

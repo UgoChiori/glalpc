@@ -1,114 +1,161 @@
 
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
-import { FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaTwitter,
+  FaFacebook,
+} from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+
+const CONTACT_LINKS = [
+  {
+    href: "mailto:attorneys@glalpc.com",
+    label: "attorneys@glalpc.com",
+    icon: Mail,
+  },
+  {
+    href: "tel:+2347042662654",
+    label: "+234 704 266 2654",
+    icon: Phone,
+  },
+] as const;
+
+const SOCIAL_LINKS = [
+  {
+    href: "https://www.linkedin.com/company/glaattorneys/",
+    label: "LinkedIn",
+    icon: FaLinkedin,
+  },
+  {
+    href: "https://twitter.com/glaattorneys",
+    label: "Twitter",
+    icon: FaTwitter,
+  },
+  {
+    href: "https://www.facebook.com/glaattorneys",
+    label: "Facebook",
+    icon: FaFacebook,
+  },
+] as const;
+
+const FOOTER_LINKS = [
+  {
+    to: "/privacy",
+    translationKey: "footer.privacy",
+  },
+  {
+    to: "/terms",
+    translationKey: "footer.terms",
+  },
+] as const;
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-300 text-white font-sans">
-      <div className="max-w-7xl mx-auto px-6 py-12 md:py-20">
-
-        <div className="flex flex-col md:flex-row gap-6 md:gap-32 items-start md:items-center justify-around">
-
-        
-          <div className="flex flex-col items-start gap-6">
-            <Link to="/">
+    <footer className="bg-gray-300 font-sans text-gray-900">
+      <div className="mx-auto max-w-7xl px-6 py-12 md:py-20">
+        <div className="flex flex-col items-start justify-between gap-12 md:flex-row md:items-center">
+         
+          <div className="flex max-w-xs flex-col items-start gap-6">
+            <Link
+              to="/"
+              aria-label="GLA Legal Practitioners home"
+              className="inline-flex"
+            >
               <img
                 src="/images/glalpclogo.png"
-                alt="glalogo"
-                className="h-25 md:h-45 w-auto object-contain"
+                alt="GLA Legal Practitioners"
+                className="h-25 w-auto object-contain transition-opacity duration-300 hover:opacity-80 md:h-45"
               />
             </Link>
 
-            <p className="text-gray-900 text-sm leading-relaxed max-w-xs">
+            <p className="text-sm leading-relaxed">
               {t("footer.brandText")}
             </p>
           </div>
 
-         
-          <div className="flex flex-col gap-4">
-            <h4 className="text-xs font-semibold uppercase tracking-[0.2em] mb-2 text-gray-900">
+          
+          <div>
+            <h2 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em]">
               {t("footer.connect")}
-            </h4>
+            </h2>
 
-            <div className="flex flex-col gap-4 text-sm text-gray-900">
-              <a
-                href="mailto:attorneys@glalpc.com"
-                className="flex items-center gap-3 hover:text-white"
-              >
-                <Mail size={16} /> attorneys@glalpc.com
-              </a>
+            <address className="not-italic">
+              <div className="flex flex-col gap-4 text-sm">
+                {CONTACT_LINKS.map(({ href, label, icon: Icon }) => (
+                  <a
+                    key={href}
+                    href={href}
+                    className="flex items-center gap-3 transition-colors duration-300 hover:text-white"
+                  >
+                    <Icon
+                      size={16}
+                      aria-hidden="true"
+                      className="shrink-0"
+                    />
+                    <span>{label}</span>
+                  </a>
+                ))}
 
-              <a
-                href="tel:+2347042662654"
-                className="flex items-center gap-3 hover:text-white"
-              >
-                <Phone size={16} /> +234 704 266 2654
-              </a>
-
-              <div className="flex items-start gap-3">
-                <MapPin size={16} className="mt-1 flex-shrink-0" />
-                <span>{t("footer.location")}</span>
+                <div className="flex items-start gap-3">
+                  <MapPin
+                    size={16}
+                    aria-hidden="true"
+                    className="mt-1 shrink-0"
+                  />
+                  <span>{t("footer.location")}</span>
+                </div>
               </div>
-            </div>
+            </address>
           </div>
         </div>
 
-  
-        <div className="mt-16 pt-8 border-t border-black flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-
-          <p className="text-sm text-gray-900">
+       
+        <div className="mt-16 flex flex-col items-start gap-6 border-t border-black pt-8 md:flex-row md:items-center md:justify-between">
+   
+          <p className="text-sm">
             © {currentYear} {t("footer.rights")}
           </p>
 
-          
 
-          <div className="flex items-center gap-6 text-gray-900">
-            <a
-              href="https://www.linkedin.com/company/glaattorneys/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="linkedin"
-              className="hover:text-white transition-colors"
-            >
-              <FaLinkedin size={18} />
-            </a>
+          <nav aria-label="Social media">
+            <ul className="flex items-center gap-6">
+              {SOCIAL_LINKS.map(({ href, label, icon: Icon }) => (
+                <li key={label}>
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={label}
+                    className="block transition-colors duration-300 hover:text-white"
+                  >
+                    <Icon size={18} aria-hidden="true" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
 
-            <a
-              href="https://twitter.com/glaattorneys"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="twitter"
-              className="hover:text-white transition-colors"
-            >
-              <FaTwitter size={18} />
-            </a>
-
-            <a
-              href="https://www.facebook.com/glaattorneys"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="facebook"
-              className="hover:text-white transition-colors"
-            >
-              <FaFacebook size={18} />
-            </a>
-          </div>
-
-          <div className="flex gap-6 text-[10px] uppercase tracking-widest text-gray-900">
-            <Link to="/privacy" className="hover:text-white">
-              {t("footer.privacy")}
-            </Link>
-            <Link to="/terms" className="hover:text-white">
-              {t("footer.terms")}
-            </Link>
-          </div>
-
+       
+          <nav aria-label="Legal">
+            <ul className="flex gap-6 text-[10px] uppercase tracking-widest">
+              {FOOTER_LINKS.map(({ to, translationKey }) => (
+                <li key={to}>
+                  <Link
+                    to={to}
+                    className="transition-colors duration-300 hover:text-white"
+                  >
+                    {t(translationKey)}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
       </div>
     </footer>

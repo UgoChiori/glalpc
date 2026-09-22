@@ -11,7 +11,7 @@ const Team: React.FC = () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [selectedMember, setSelectedMember] = useState<any>(null);
 
-  // ESC CLOSE
+
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
       if (e.key === "Escape") setSelectedMember(null);
@@ -21,7 +21,7 @@ const Team: React.FC = () => {
     return () => window.removeEventListener("keydown", handleEsc);
   }, []);
 
-  // LOCK BACKGROUND SCROLL
+
   useEffect(() => {
     document.body.style.overflow = selectedMember ? "hidden" : "auto";
     document.documentElement.style.overflow = selectedMember ? "hidden" : "auto";
@@ -32,7 +32,7 @@ const Team: React.FC = () => {
     };
   }, [selectedMember]);
 
-  // MODAL ANIMATION
+
   useEffect(() => {
     if (!selectedMember) return;
 
@@ -50,7 +50,7 @@ const Team: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto">
 
-        {/* HEADER */}
+
         <div className="flex justify-end mb-12">
           {/* <ThemeToggle /> */}
         </div>
@@ -59,7 +59,7 @@ const Team: React.FC = () => {
      {t("team.title")}
         </h1>
 
-        {/* GRID */}
+
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {teamData.map((member) => (
             <div
@@ -89,7 +89,7 @@ const Team: React.FC = () => {
         <Brazil />
       </div>
 
-      {/* MODAL */}
+     
     {selectedMember && (
   <div
     className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4 py-6"
@@ -118,8 +118,7 @@ const Team: React.FC = () => {
   />
 </div>
 
-      {/* SCROLLABLE CONTENT: Scrolls independently on desktop, flows naturally on mobile */}
-      <div className="w-full md:w-1/2 h-auto md:h-full overflow-y-visible md:overflow-y-auto p-6 space-y-4 scroll-smooth">
+        <div className="w-full md:w-1/2 h-auto md:h-full overflow-y-visible md:overflow-y-auto p-6 space-y-4 scroll-smooth">
         <div>
           <h2 className="text-2xl font-semibold text-white">
             {selectedMember.name}
@@ -147,7 +146,7 @@ const Team: React.FC = () => {
           </div>
         )}
 
-        {/* EXPERIENCE */}
+      
         {selectedMember.experience?.length > 0 && (
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-wider text-gray-100 mb-2 mt-4">
@@ -161,7 +160,7 @@ const Team: React.FC = () => {
           </div>
         )}
 
-        {/* PUBLICATIONS */}
+        
         {selectedMember.publications?.length > 0 && (
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-wider text-gray-100 mb-2 mt-4">
@@ -175,7 +174,7 @@ const Team: React.FC = () => {
           </div>
         )}
 
-        {/* CONTACT */}
+   
         {selectedMember.contact && (
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-wider text-gray-100 mb-2 mt-4">

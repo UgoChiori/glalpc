@@ -93,7 +93,7 @@ const Editorials: React.FC = () => {
           </div>
         </div>
 
-        {/* Buttons - Repositioned inside the padding for mobile safety */}
+       
         <button
           onClick={prevSlide}
           title="Previous slide"

@@ -1,284 +1,352 @@
 import React, { useState } from "react";
-import { Mail, MapPin, Phone, MessageCircle } from "lucide-react";
-import toast from "react-hot-toast";
-import { Toaster } from "react-hot-toast";
+import {
+  Mail,
+  MapPin,
+  Phone,
+  MessageCircle,
+} from "lucide-react";
+import toast, { Toaster } from "react-hot-toast";
+
+const CONTACT_OFFICES = [
+  {
+    name: "Nigeria Location",
+    address: "5 Atinuke Olabanji Street, Ikeja, Lagos, Nigeria 100001",
+    email: "attorneys@glalpc.com",
+    phones: [
+      {
+        href: "tel:+2347042662654",
+        label: "+234 704 266 2654",
+      },
+      {
+        href: "tel:+2347035610109",
+        label: "+234 703 561 0109",
+      },
+    ],
+    mapTitle: "Lagos Office",
+    mapUrl:
+      "https://www.google.com/maps?q=5%20Atinuke%20Olabanji%20Street%20Ikeja%20Lagos&output=embed",
+  },
+  {
+    name: "Brazil Location",
+    address:
+      "Advocacia FJ, Praça Dr. João Mendes, 42, 4th floor, Cj. 44, Downtown of São Paulo, Brazil",
+    whatsapp: {
+      href: "https://wa.me/5511986654733",
+      label: "+55 11 98665-4733 (WhatsApp Only)",
+    },
+    mapTitle: "São Paulo Office",
+    mapUrl:
+      "https://www.google.com/maps?q=Praça%20Dr.%20João%20Mendes%2042%20São%20Paulo%20Brazil&output=embed",
+  },
+] as const;
+
+const INPUT_CLASSES =
+  "w-full border-b border-gray-300 bg-transparent px-4 py-3 text-white outline-none transition placeholder:text-gray-400 focus:border-yellow-700";
 
 const ContactPage: React.FC = () => {
-  const [loading, setLoading] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (
+    event: React.FormEvent<HTMLFormElement>,
+  ) => {
     event.preventDefault();
 
-    // 1. Store the form reference
+    if (isSubmitting) return;
+
     const form = event.currentTarget;
-
-    const loadingToast = toast.loading("Sending message...");
-    setLoading(true);
-
-    // 2. Use the stored form reference
     const formData = new FormData(form);
-    formData.append("access_key", import.meta.env.VITE_WEB3FORMS_KEY);
+    const accessKey = import.meta.env.VITE_WEB3FORMS_KEY;
+
+    if (!accessKey) {
+      toast.error("The contact form is not configured correctly.");
+      return;
+    }
+
+    formData.append("access_key", accessKey);
+
+    setIsSubmitting(true);
+    const loadingToast = toast.loading("Sending message...");
 
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: formData,
-      });
+      const response = await fetch(
+        "https://api.web3forms.com/submit",
+        {
+          method: "POST",
+          body: formData,
+        },
+      );
 
-      const data = await res.json();
-
-      if (data.success) {
-        console.log(data, "Success");
-        toast.success("Message sent successfully ✔️", {
-          id: loadingToast,
-        });
-
-        // 3. Reset the stored form reference safely
-        form.reset();
-      } else {
-        console.error(data, "Error");
-        toast.error(data.message || "Something went wrong ❌", {
-          id: loadingToast,
-        });
+      if (!response.ok) {
+        throw new Error(
+          `Request failed with status ${response.status}`,
+        );
       }
-    } catch (error) {
-      console.error(error, "Error details:");
 
-      toast.error("An error occurred. Try again ❌", {
+      const data = await response.json();
+
+      if (!data.success) {
+        throw new Error(
+          data.message || "Unable to send your message.",
+        );
+      }
+
+      form.reset();
+
+      toast.success("Message sent successfully.", {
         id: loadingToast,
       });
+    } catch (error) {
+      console.error("Contact form submission failed:", error);
+
+      toast.error(
+        error instanceof Error
+          ? error.message
+          : "An error occurred. Please try again.",
+        {
+          id: loadingToast,
+        },
+      );
     } finally {
-      setLoading(false);
+      setIsSubmitting(false);
     }
   };
 
   return (
-    <section className="bg-[#f8f3ed] min-h-screen py-12 px-6 ">
-      <Toaster position="top-right" reverseOrder={false} />
-      <div className="max-w-7xl mx-auto border border-black/10 p-6 md:p-12 bg-[#f8f3ed] bg-gray-800 text-gray-800">
-        {/* GRID */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 ">
-          {/* LEFT */}
-          <div className="flex flex-col ">
+    <section className="min-h-screen bg-[#f8f3ed] px-6 py-12">
+      <Toaster position="top-right" />
+
+      {/* Contact information and form */}
+      <div className="mx-auto max-w-7xl border border-black/10 bg-gray-800 p-6 text-gray-800 md:p-12">
+        <div className="grid grid-cols-1 gap-14 lg:grid-cols-2">
+          {/* Contact information */}
+          <div>
             <div>
-              <h1 className="text-4xl md:text-5xl font-semibold leading-none text-white">
+              <h1 className="text-4xl font-semibold leading-none text-white md:text-5xl">
                 Contact
                 <br />
                 Info
               </h1>
 
-              <div className="w-10 h-[2px] bg-white mt-5"></div>
+              <div className="mt-5 h-[2px] w-10 bg-white" />
             </div>
 
-            {/* CONTACT DETAILS */}
-            {/* LEFT */}
-            <div className="flex flex-col">
-              {/* CONTACT DETAILS */}
-              <div className="space-y-8 mt-10">
-                {/* NIGERIA OFFICE */}
-                <div>
-                  <h3 className="text-sm uppercase tracking-[0.2em] font-semibold mb-4 text-white">
-                    Nigeria Location
-                  </h3>
+            <div className="mt-10 space-y-10">
+              {CONTACT_OFFICES.map((office) => (
+                <section key={office.name}>
+                  <h2 className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-white">
+                    {office.name}
+                  </h2>
 
-                  {/* ADDRESS */}
-                  <div className="flex items-start gap-3 mb-4">
-                    <MapPin size={18} className="text-white mt-1" />
+                  {/* Address */}
+                  <div className="mb-4 flex items-start gap-3">
+                    <MapPin
+                      size={18}
+                      aria-hidden="true"
+                      className="mt-1 shrink-0 text-white"
+                    />
 
-                    <p className="text-white text-sm md:text-base leading-relaxed">
-                      5 Atinuke Olabanji Street, Ikeja, Lagos, Nigeria 100001
+                    <p className="text-sm leading-relaxed text-white md:text-base">
+                      {office.address}
                     </p>
                   </div>
 
-                  {/* EMAIL */}
-                  <div className="flex items-center gap-3 mb-4">
-                    <Mail size={18} className="text-white" />
-
-                    <a
-                      href="mailto:attorneys@glalpc.com"
-                      className="text-white text-sm md:text-base hover:text-yellow-700 transition"
-                    >
-                      attorneys@glalpc.com
-                    </a>
-                  </div>
-
-                  {/* PHONE */}
-                  <div className="flex items-start gap-3">
-                    <Phone size={18} className="text-white mt-1" />
-
-                    <div className="flex flex-col text-sm md:text-base">
-                      <a
-                        href="tel:+2347042662654"
-                        className="text-white hover:text-yellow-700 transition"
-                      >
-                        +234 704 266 2654
-                      </a>
+                  {/* Email */}
+                  {"email" in office && (
+                    <div className="mb-4 flex items-center gap-3">
+                      <Mail
+                        size={18}
+                        aria-hidden="true"
+                        className="shrink-0 text-white"
+                      />
 
                       <a
-                        href="tel:+2347035610109"
-                        className="text-gray-100 hover:text-yellow-700 transition"
+                        href={`mailto:${office.email}`}
+                        className="text-sm text-white transition-colors hover:text-yellow-700 md:text-base"
                       >
-                        +234 703 561 0109
+                        {office.email}
                       </a>
                     </div>
-                  </div>
-                </div>
+                  )}
 
-                {/* BRAZIL OFFICE */}
-                <div>
-                  <h3 className="text-sm uppercase tracking-[0.2em] text-white mb-4">
-                    Brazil Location
-                  </h3>
+                  {/* Phone numbers */}
+                  {"phones" in office && (
+                    <div className="flex items-start gap-3">
+                      <Phone
+                        size={18}
+                        aria-hidden="true"
+                        className="mt-1 shrink-0 text-white"
+                      />
 
-                  {/* ADDRESS */}
-                  <div className="flex items-start gap-3 mb-4">
-                    <MapPin size={18} className="text-white mt-1" />
+                      <div className="flex flex-col gap-1 text-sm md:text-base">
+                        {office.phones.map((phone) => (
+                          <a
+                            key={phone.href}
+                            href={phone.href}
+                            className="text-white transition-colors hover:text-yellow-700"
+                          >
+                            {phone.label}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  )}
 
-                    <p className="text-white text-sm md:text-base leading-relaxed">
-                      Advocacia FJ, Praça Dr. João Mendes, 42, 4th floor, Cj.
-                      44, Downtown of São Paulo, Brazil
-                    </p>
-                  </div>
+                  {/* WhatsApp */}
+                  {"whatsapp" in office && (
+                    <div className="flex items-start gap-3">
+                      <MessageCircle
+                        size={18}
+                        aria-hidden="true"
+                        className="mt-1 shrink-0 text-white"
+                      />
 
-                  {/* PHONE */}
-                  <div className="flex items-start gap-3">
-                    <MessageCircle size={18} className="text-white mt-1" />
-
-                    <a
-                      href="https://wa.me/5511986654733"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-white text-sm md:text-base hover:text-yellow-700 transition"
-                    >
-                      +55 11 98665-4733 (WhatsApp Only)
-                    </a>
-                  </div>
-                </div>
-              </div>
+                      <a
+                        href={office.whatsapp.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-white transition-colors hover:text-yellow-700 md:text-base"
+                      >
+                        {office.whatsapp.label}
+                      </a>
+                    </div>
+                  )}
+                </section>
+              ))}
             </div>
           </div>
 
-          {/* RIGHT */}
+          {/* Contact form */}
           <div>
-            <form className="space-y-6" onSubmit={handleSubmit}>
-              {/* FULL NAME */}
+            <form
+              onSubmit={handleSubmit}
+              className="space-y-6"
+            >
               <div>
-                <label className="block text-sm text-white mb-2">
+                <label
+                  htmlFor="name"
+                  className="mb-2 block text-sm text-white"
+                >
                   Full Name
                 </label>
 
                 <input
+                  id="name"
                   name="name"
                   type="text"
-                  placeholder="E.g John Doe"
-                  className="w-full border-b border-gray-300 bg-transparent px-4 py-3 outline-none focus:border-yellow-700 transition placeholder-gray-400"
+                  placeholder="E.g. John Doe"
+                  autoComplete="name"
+                  required
+                  className={INPUT_CLASSES}
                 />
               </div>
 
-              {/* EMAIL */}
               <div>
-                <label className="block text-sm text-white mb-2">
+                <label
+                  htmlFor="email"
+                  className="mb-2 block text-sm text-white"
+                >
                   Email Address
                 </label>
 
                 <input
+                  id="email"
                   name="email"
                   type="email"
-                  placeholder="E.g johndoe@example.com"
-                  className="w-full border-b border-gray-300 bg-transparent px-4 py-3 outline-none focus:border-yellow-700 transition placeholder-gray-400"
+                  placeholder="E.g. johndoe@example.com"
+                  autoComplete="email"
+                  required
+                  className={INPUT_CLASSES}
                 />
               </div>
 
-              {/* PHONE */}
               <div>
-                <label className="block text-sm text-white mb-2">
+                <label
+                  htmlFor="phone"
+                  className="mb-2 block text-sm text-white"
+                >
                   Phone Number
                 </label>
 
                 <input
+                  id="phone"
                   name="phone"
-                  type="text"
-                  placeholder="E.g 09000000000"
-                  className="w-full border-b border-gray-300 bg-transparent px-4 py-3 outline-none focus:border-yellow-700 transition placeholder-gray-400"
+                  type="tel"
+                  placeholder="E.g. 09000000000"
+                  autoComplete="tel"
+                  className={INPUT_CLASSES}
                 />
               </div>
 
-              {/* SUBJECT */}
               <div>
-                <label className="block text-sm text-white mb-2">Subject</label>
+                <label
+                  htmlFor="subject"
+                  className="mb-2 block text-sm text-white"
+                >
+                  Subject
+                </label>
 
                 <input
+                  id="subject"
                   name="subject"
                   type="text"
-                  placeholder="E.g Legal Consultation"
-                  className="w-full border-b border-gray-300 bg-transparent px-4 py-3 outline-none focus:border-yellow-700 transition placeholder-gray-400"
+                  placeholder="E.g. Legal Consultation"
+                  required
+                  className={INPUT_CLASSES}
                 />
               </div>
 
-              {/* MESSAGE */}
               <div>
-                <label className="block text-sm text-white mb-2">Message</label>
+                <label
+                  htmlFor="message"
+                  className="mb-2 block text-sm text-white"
+                >
+                  Message
+                </label>
 
                 <textarea
+                  id="message"
                   name="message"
                   rows={5}
-                  placeholder="E.g I would like legal guidance regarding..."
-                  className="w-full border-b border-gray-300 bg-transparent px-4 py-3 outline-none focus:border-yellow-700 transition resize-none placeholder-gray-400"
+                  placeholder="E.g. I would like legal guidance regarding..."
+                  required
+                  className={`${INPUT_CLASSES} resize-none`}
                 />
               </div>
 
-              {/* BUTTON */}
               <button
                 type="submit"
-                disabled={loading}
-                className="bg-gray-200 text-black px-8 py-3 hover:bg-black hover:text-white transition cursor-pointer border border-black/10"
+                disabled={isSubmitting}
+                className="border border-black/10 bg-gray-200 px-8 py-3 text-black transition-colors hover:bg-black hover:text-white disabled:cursor-not-allowed disabled:opacity-60"
               >
-                {loading ? "Sending..." : "Send Message"}
+                {isSubmitting ? "Sending..." : "Send Message"}
               </button>
             </form>
           </div>
         </div>
       </div>
 
-      {/* MAPS */}
-      <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* NIGERIA MAP */}
-        <div>
-          <h3 className="text-sm uppercase tracking-[0.2em] text-gray-700 mb-3">
-            Lagos Office
-          </h3>
+      {/* Office maps */}
+      <div className="mx-auto mt-14 grid max-w-7xl grid-cols-1 gap-6 md:grid-cols-2">
+        {CONTACT_OFFICES.map((office) => (
+          <div key={office.mapTitle}>
+            <h2 className="mb-3 text-sm uppercase tracking-[0.2em] text-gray-700">
+              {office.mapTitle}
+            </h2>
 
-          <div className="overflow-hidden border border-black/10 h-[300px]">
-            <iframe
-              title="Lagos Office"
-              src="https://www.google.com/maps?q=5%20Atinuke%20Olabanji%20Street%20Ikeja%20Lagos&output=embed"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-            ></iframe>
+            <div className="h-[300px] overflow-hidden border border-black/10">
+              <iframe
+                title={office.mapTitle}
+                src={office.mapUrl}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
           </div>
-        </div>
-
-        {/* BRAZIL MAP */}
-        <div>
-          <h3 className="text-sm uppercase tracking-[0.2em] text-gray-700 mb-3">
-            São Paulo Office
-          </h3>
-
-          <div className="overflow-hidden border border-black/10 h-[300px]">
-            <iframe
-              title="Brazil Office"
-              src="https://www.google.com/maps?q=Praça%20Dr.%20João%20Mendes%2042%20São%20Paulo%20Brazil&output=embed"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-            ></iframe>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );

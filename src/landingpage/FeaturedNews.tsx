@@ -13,7 +13,7 @@ const FeaturedNews: React.FC = () => {
       </h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-        {/* FEATURED */}
+ 
         <div className="lg:col-span-2 bg-gray-100 rounded-xl overflow-hidden shadow-sm">
           <img
             src="/images/herosecthree.jpeg"
@@ -46,7 +46,7 @@ const FeaturedNews: React.FC = () => {
           </div>
         </div>
 
-        {/* SIDE LIST */}
+   
         <div className="flex flex-col gap-6">
           <div className="border-b border-gray-200 pb-4">
             <p className="text-xs text-gray-500 mb-1">Legal Update</p>
