@@ -83,26 +83,7 @@ const Team: React.FC = () => {
     </p>
   </div>
 </div>
-            // <div
-            //   key={member.id}
-            //   onClick={() => setSelectedMember(member)}
-            //   className="cursor-pointer bg-gray-800 shadow-md rounded-lg overflow-hidden hover:shadow-xl transition"
-            // >
-            //   <img
-            //     src={member.image}
-            //     alt={member.name}
-            //     className="w-full h-[320px] object-cover"
-            //   />
-
-            //   <div className="p-4">
-            //     <h3 className="text-lg font-bold text-white">
-            //       {member.name}
-            //     </h3>
-            //     <p className="text-sm text-gray-100 uppercase">
-            //       {member.role}
-            //     </p>
-            //   </div>
-            // </div>
+         
           ))}
         </div>
         <Brazil />
@@ -128,14 +109,14 @@ const Team: React.FC = () => {
         ×
       </button>
 
-      {/* IMAGE: Stacks on mobile, takes half width on desktop */}
-      <div className="w-full md:w-1/2 h-64 md:h-full flex-shrink-0">
-        <img
-          src={selectedMember.image}
-          className="w-full h-full object-cover"
-          alt={selectedMember.name}
-        />
-      </div>
+   
+      <div className="w-full md:w-1/2 flex-shrink-0">
+  <img
+    src={selectedMember.image}
+    className="block w-full h-auto"
+    alt={selectedMember.name}
+  />
+</div>
 
       {/* SCROLLABLE CONTENT: Scrolls independently on desktop, flows naturally on mobile */}
       <div className="w-full md:w-1/2 h-auto md:h-full overflow-y-visible md:overflow-y-auto p-6 space-y-4 scroll-smooth">
