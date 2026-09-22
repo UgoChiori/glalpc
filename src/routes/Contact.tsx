@@ -150,7 +150,7 @@ const ContactPage: React.FC = () => {
                       rel="noopener noreferrer"
                       className="text-white text-sm md:text-base hover:text-yellow-700 transition"
                     >
-                      +55 11 98665-4733
+                      +55 11 98665-4733 (WhatsApp Only)
                     </a>
                   </div>
                 </div>
