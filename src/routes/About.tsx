@@ -1,6 +1,3 @@
-
-
-
 import React from "react";
 // import ThemeToggle from "../components/ThemeToggle";
 import { useTranslation } from "react-i18next";
@@ -76,42 +73,7 @@ const About: React.FC = () => {
 
         </div>
       </div>
-      {/* CSR SECTION */}
-{/* <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
-  <div className="space-y-6">
-    <p className="text-slate-700 dark:text-gray-300 leading-relaxed">
-      {t("about.body4")}
-    </p>
-  </div>
-
-  <div className="space-y-4">
-    <div className="bg-slate-50 dark:bg-gray-800 p-6 border border-slate-200 dark:border-gray-700 rounded-lg">
-      <h3 className="font-semibold text-slate-900 dark:text-white mb-2">
-        {t("about.csrLinksTitle")}
-      </h3>
-
-   <div className="flex flex-col gap-3 text-sm">
-  <a
-    href="https://www.linkedin.com/company/send-a-child-2-school-africa/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-slate-700 dark:text-gray-300 hover:underline"
-  >
-    {t("about.csrLink1.label")}
-  </a>
-
-  <a
-    href="https://www.linkedin.com/company/cross-border-legal-practice-ai/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-slate-700 dark:text-gray-300 hover:underline"
-  >
-    {t("about.csrLink2.label")}
-  </a>
-</div>
-    </div>
-  </div>
-</div> */}
+     
     </section>
   );
 };

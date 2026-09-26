@@ -101,7 +101,7 @@ const Team: React.FC = () => {
       className="modal-content relative w-full max-w-4xl h-[90vh] md:h-[85vh] bg-gray-900 rounded-xl shadow-2xl overflow-y-auto md:overflow-hidden flex flex-col md:flex-row"
       onClick={(e) => e.stopPropagation()}
     >
-      {/* CLOSE BUTTON */}
+   
       <button
         onClick={() => setSelectedMember(null)}
         className="absolute top-3 right-4 text-3xl text-gray-500 hover:text-black dark:hover:text-white z-20 bg-white/80 dark:bg-gray-900/80 rounded-full w-10 h-10 flex items-center justify-center shadow-sm md:shadow-none"
@@ -132,7 +132,7 @@ const Team: React.FC = () => {
           {selectedMember.bio}
         </p>
 
-        {/* QUALIFICATIONS */}
+   
         {selectedMember.qualifications?.length > 0 && (
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-wider text-gray-100  mb-2 mt-4">

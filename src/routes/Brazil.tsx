@@ -41,7 +41,7 @@ const Brazil = () => {
               </div>
             </div>
 
-            {/* Image */}
+            
       <div className="relative w-full overflow-hidden rounded-2xl border border-gray-700 bg-gray-800 shadow-2xl">
  <div className="relative w-full overflow-hidden rounded-2xl border border-gray-700 bg-gray-800 shadow-2xl">
   <img

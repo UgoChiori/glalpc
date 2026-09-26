@@ -1,4 +1,5 @@
 
+
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -8,36 +9,38 @@ const MoreNews: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="max-w-6xl mx-auto px-4 md:px-6 py-10">
-      <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-gray-800">
+    <div className="mx-auto max-w-6xl px-4 py-10 md:px-6">
+      <h2 className="mb-6 text-2xl font-semibold text-gray-800 md:text-3xl">
         {t("moreNews.heading")}
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-    
-        <div className="bg-gray-100 rounded-lg shadow-sm overflow-hidden">
-          <img
-            src="/images/janeesq.jpeg"
-            alt="Legal tips"
-            className="w-full h-56 md:h-64 object-cover rounded-md"
-          />
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+
+        <div className="overflow-hidden rounded-lg bg-gray-100 shadow-sm">
+          <div className="relative aspect-[4/3] w-full overflow-hidden">
+            <img
+              src="/images/janeesq.jpeg"
+              alt="Legal tips"
+              className="h-full w-full object-cover object-center"
+            />
+          </div>
 
           <div className="p-5">
-            <h3 className="text-lg font-semibold text-gray-800 mb-2 tracking-wide">
+            <h3 className="mb-2 text-lg font-semibold tracking-wide text-gray-800">
               {t("moreNews.card1Title")}
             </h3>
 
-            <p className="text-sm text-gray-600 mb-4 leading-relaxed">
+            <p className="mb-4 text-sm leading-relaxed text-gray-600">
               {t("moreNews.card1Desc")}
             </p>
 
-            <p className="text-xs text-gray-500 mb-4">
+            <p className="mb-4 text-xs text-gray-500">
               {t("moreNews.card1Author")}
             </p>
 
             <Link
               to="/news/legal-entrepreneur"
-              className="flex items-center gap-2 text-gray-800 font-medium hover:gap-3 transition-all duration-300 w-fit"
+              className="flex w-fit items-center gap-2 font-medium text-gray-800 transition-all duration-300 hover:gap-3"
             >
               {t("moreNews.readMore")}
               <ArrowUpRight size={18} className="animate-bounce" />
@@ -45,26 +48,28 @@ const MoreNews: React.FC = () => {
           </div>
         </div>
 
-  
-        <div className="bg-gray-100 rounded-lg shadow-sm overflow-hidden">
-          <img
-            src="/images/team13.jpg"
-            alt="Corporate training"
-            className="w-full h-56 md:h-64 object-cover"
-          />
+     
+        <div className="overflow-hidden rounded-lg bg-gray-100 shadow-sm">
+          <div className="relative aspect-[4/3] w-full overflow-hidden">
+            <img
+              src="/images/team13.jpg"
+              alt="Corporate training"
+              className="h-full w-full object-cover object-center"
+            />
+          </div>
 
           <div className="p-5">
-            <h3 className="text-lg font-semibold text-gray-800 mb-2 uppercase tracking-wide">
+            <h3 className="mb-2 text-lg font-semibold uppercase tracking-wide text-gray-800">
               {t("moreNews.card2Title")}
             </h3>
 
-            <p className="text-sm text-gray-600 mb-4 leading-relaxed">
+            <p className="mb-4 text-sm leading-relaxed text-gray-600">
               {t("moreNews.card2Desc")}
             </p>
 
             <Link
               to="/news/corporate-training"
-              className="flex items-center gap-2 text-gray-800 font-medium hover:gap-3 transition-all duration-300 w-fit"
+              className="flex w-fit items-center gap-2 font-medium text-gray-800 transition-all duration-300 hover:gap-3"
             >
               {t("moreNews.readMore")}
               <ArrowUpRight size={18} className="animate-bounce" />

@@ -13,39 +13,41 @@ const FeaturedNews: React.FC = () => {
       </h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+    
+<div className="overflow-hidden rounded-xl bg-gray-100 shadow-sm lg:col-span-2">
+  <img
+    src="/images/herosecthree.jpeg"
+    alt="Featured article"
+    className="block h-auto w-full"
+  />
+
+  <div className="p-6 md:p-8">
+    <p className="mb-3 text-xs uppercase tracking-widest text-gray-500">
+      {t("featuredNews.featuredLabel")}
+    </p>
+
+    <h3 className="mb-4 text-2xl font-semibold leading-snug text-gray-800 md:text-3xl">
+      {t("featuredNews.featuredTitle")}
+    </h3>
+
+    <p className="mb-6 text-sm leading-relaxed text-gray-600 md:text-base">
+      {t("featuredNews.featuredDesc")}
+      <br />
+      <strong>Omolade Olalemi Esq.</strong>
+    </p>
+
+    <Link
+      to="/news/cyber-security-law"
+      className="flex w-fit items-center gap-2 font-medium text-gray-900 transition-all duration-300 hover:gap-3"
+    >
+      {t("featuredNews.readFull")}
+      <ArrowRight size={18} />
+    </Link>
+  </div>
+</div>
+
  
-        <div className="lg:col-span-2 bg-gray-100 rounded-xl overflow-hidden shadow-sm">
-          <img
-            src="/images/herosecthree.jpeg"
-            alt="Featured article"
-            className="w-full h-80 md:h-[420px] object-cover"
-          />
-
-          <div className="p-6 md:p-8">
-            <p className="text-xs uppercase tracking-widest text-gray-500 mb-3">
-              {t("featuredNews.featuredLabel")}
-            </p>
-
-            <h3 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4 leading-snug">
-              {t("featuredNews.featuredTitle")}
-            </h3>
-
-            <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-6">
-              {t("featuredNews.featuredDesc")}
-              <br />
-              <strong>Omolade Olalemi Esq.</strong>
-            </p>
-
-            <Link
-              to="/news/cyber-security-law"
-              className="flex items-center gap-2 font-medium text-gray-900 hover:gap-3 transition-all duration-300 w-fit"
-            >
-              {t("featuredNews.readFull")}
-              <ArrowRight size={18} />
-            </Link>
-          </div>
-        </div>
-
+      
    
         <div className="flex flex-col gap-6">
           <div className="border-b border-gray-200 pb-4">

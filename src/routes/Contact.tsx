@@ -115,10 +115,9 @@ const ContactPage: React.FC = () => {
     <section className="min-h-screen bg-[#f8f3ed] px-6 py-12">
       <Toaster position="top-right" />
 
-      {/* Contact information and form */}
       <div className="mx-auto max-w-7xl border border-black/10 bg-gray-800 p-6 text-gray-800 md:p-12">
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-2">
-          {/* Contact information */}
+        
           <div>
             <div>
               <h1 className="text-4xl font-semibold leading-none text-white md:text-5xl">
@@ -137,7 +136,7 @@ const ContactPage: React.FC = () => {
                     {office.name}
                   </h2>
 
-                  {/* Address */}
+                  
                   <div className="mb-4 flex items-start gap-3">
                     <MapPin
                       size={18}
@@ -150,7 +149,7 @@ const ContactPage: React.FC = () => {
                     </p>
                   </div>
 
-                  {/* Email */}
+                 
                   {"email" in office && (
                     <div className="mb-4 flex items-center gap-3">
                       <Mail
@@ -168,7 +167,7 @@ const ContactPage: React.FC = () => {
                     </div>
                   )}
 
-                  {/* Phone numbers */}
+                
                   {"phones" in office && (
                     <div className="flex items-start gap-3">
                       <Phone
@@ -191,7 +190,7 @@ const ContactPage: React.FC = () => {
                     </div>
                   )}
 
-                  {/* WhatsApp */}
+             
                   {"whatsapp" in office && (
                     <div className="flex items-start gap-3">
                       <MessageCircle
@@ -215,7 +214,7 @@ const ContactPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Contact form */}
+      
           <div>
             <form
               onSubmit={handleSubmit}
@@ -325,7 +324,7 @@ const ContactPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Office maps */}
+    
       <div className="mx-auto mt-14 grid max-w-7xl grid-cols-1 gap-6 md:grid-cols-2">
         {CONTACT_OFFICES.map((office) => (
           <div key={office.mapTitle}>
